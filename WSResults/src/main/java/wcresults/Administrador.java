@@ -38,7 +38,5 @@ public class Administrador {
         this.senha = senha;
     }
     
-    //matheus é uma puta
-    //skldksald
-    //eu vo me mata
+    //aline
 }
