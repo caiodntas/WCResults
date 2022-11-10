@@ -38,6 +38,5 @@ public class Administrador {
         this.senha = senha;
     }
     
-    //matheus é uma puta
-    //São Judas
+    //São Judas Tadeu
 }
