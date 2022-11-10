@@ -38,10 +38,5 @@ public class Administrador {
         this.senha = senha;
     }
     
-<<<<<<< HEAD
-    //Teste do Github
-=======
-    //aline sd
-    //São Judas Tadeu
->>>>>>> bd9bf224b2c61032d8d81af95f1c5afa195c9956
+    // Teste aleatório
 }
