@@ -38,6 +38,5 @@ public class Administrador {
         this.senha = senha;
     }
     
-    //aline sd
-    //São Judas Tadeu
+    //aline
 }
