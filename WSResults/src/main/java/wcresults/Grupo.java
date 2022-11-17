@@ -1,16 +1,22 @@
 package wcresults;
-import java.awt.List;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Grupo {
     
     public static void atribuirTimes() {
-        List<Grupo> lista = new ArrayList<Grupo>();
+        ArrayList<Integer> grupo = new ArrayList<>();
+        grupo.add(1);
+        grupo.add(2);
+        grupo.add(3);
+        grupo.add(4);
+        grupo.add(5);
+        grupo.add(6);
+        grupo.add(7);
+        grupo.add(8);
         
-        
-        Random random = new Random(32);
-        
-        
+        for(grupo == 1) {
+            atribuirTimes();
+        }
     }
 }
