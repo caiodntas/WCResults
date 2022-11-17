@@ -1,5 +1,7 @@
 package wcresults;
 
+import java.util.Random;
+
 public class Time {
     private int codigo;
     private String nome;
@@ -38,4 +40,5 @@ public class Time {
         this.oficial = oficial;
     }
     
+    Random random = new Random(32);
 }
