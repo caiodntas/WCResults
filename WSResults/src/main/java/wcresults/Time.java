@@ -1,6 +1,7 @@
 package wcresults;
 
 import java.util.Random;
+import java.sql.*;
 
 public class Time {
     private int codigo;
