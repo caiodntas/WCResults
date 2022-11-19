@@ -3,7 +3,6 @@ package wcresults;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-Import javax.swing.JOptionPane;
 
 public class DAO {
     public boolean exibirAdm (Administrador administrador) throws Exception {
