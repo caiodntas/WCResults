@@ -55,13 +55,6 @@ public class DAOAdm {
             ps.close();
             }
     }
-    
-    
-    
-    public int atribuirTimes(int times[]) throws Exception {
-        for (time = 0; time < 32; time++)
-        update time set.grupo    
-    }
 }    
 
 
