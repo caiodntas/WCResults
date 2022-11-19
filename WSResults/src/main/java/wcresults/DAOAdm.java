@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 
 public class DAOAdm {
     public boolean exibirAdm (Administrador administrador) throws Exception {
-        String sql = "SELECT * FROM adm_table WHERE login = ? AND senha = ?";
+        String sql = "SELECT * FROM adm_table";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, administrador.getLogin());
