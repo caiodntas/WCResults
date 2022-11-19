@@ -1,18 +1,17 @@
 package wcresults;
 
-import java.util.Random;
-import java.sql.*;
-
 public class Time {
     private int codigo;
     private String nome;
     private Boolean oficial;
+    private  char grupo;
     
     //construtor
-    public Time(int codigo, String nome, Boolean oficial) {
+    public Time(int codigo, String nome, Boolean oficial, char grupo) {
         this.codigo = codigo;
         this.nome = nome;
         this.oficial = oficial;
+        this.grupo = grupo;
     }
     
     //getters and setters
@@ -41,6 +40,13 @@ public class Time {
         this.oficial = oficial;
     }
     
+    public char getGrupo() {
+        return grupo;
+    }
+    
+    public void setGrupo(char grupo) {
+        this.grupo = grupo;
+    }
     
     public void importarOficiais(){
         //LIMPAR TABELA DE TIMES PARA RECEBER NOVOS
