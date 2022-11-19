@@ -17,13 +17,15 @@ public class Grupo {
     
     int time = 0;
     
-    while (time < 32) {
-        grupo = r.nextInt(8)+1;
-        Switch (grupo) {
-            case 1: if (vaga1 < 4) {
-            times [times] = vaga1;
-            
-    }
+    while (Time < 32) {
+        int grupo = r.nextInt(8)+1;
+        switch (grupo) {
+            case 1:
+                if (vaga1 < 4) {
+                times [time] = "A";
+                vaga1++; time++;}
+            break;
         }
-    }    
-}
+    }
+}    
+
