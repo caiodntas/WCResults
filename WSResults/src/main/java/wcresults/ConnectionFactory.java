@@ -8,7 +8,7 @@ public class ConnectionFactory {
     private static String porta = "3306";
     private static String db = "wc_results";
     private static String usuario = "root";
-    private static String senha = "anima123";
+    private static String senha = "Aline2104*";
     public static Connection obtemConexao () {
         try {
             //Connection c = DriverManager.getConnection(

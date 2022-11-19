@@ -39,10 +39,13 @@ public class LoginTela extends javax.swing.JFrame {
         loginButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         loginTextField.setBorder(javax.swing.BorderFactory.createTitledBorder("Digite seu login"));
+        getContentPane().add(loginTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 42, 270, 60));
 
         senhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder("Digite sua senha"));
+        getContentPane().add(senhaPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 142, 270, 60));
 
         sairButton.setText("Sair");
         sairButton.addActionListener(new java.awt.event.ActionListener() {
@@ -50,6 +53,7 @@ public class LoginTela extends javax.swing.JFrame {
                 sairButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(sairButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(84, 243, 90, 52));
 
         loginButton.setText("Login");
         loginButton.addActionListener(new java.awt.event.ActionListener() {
@@ -57,38 +61,7 @@ public class LoginTela extends javax.swing.JFrame {
                 loginButtonActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(senhaPasswordField)
-                            .addComponent(loginTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(84, 84, 84)
-                        .addComponent(sairButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32)
-                        .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(69, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(loginTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addComponent(senhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(sairButton, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
-                    .addComponent(loginButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(50, Short.MAX_VALUE))
-        );
+        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 243, 90, 52));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -104,7 +77,7 @@ public class LoginTela extends javax.swing.JFrame {
         try {
             Administrador adm = new Administrador(login, senha);
             DAOAdm dao = new DAOAdm();
-            if (dao.existeAdm(administrador)) {
+            if (dao.existeAdm(adm)) {
                 //JOptionPane.showMessageDialog(null, "Bem-vindo, " + usuario.getNome());
                 TelaPrincipalAdm tela = new TelaPrincipalAdm();
                 tela.setVisible(true);
