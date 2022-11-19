@@ -15,9 +15,17 @@ public class DAO {
                 return rs.next();
             }
         }
+    
+    public String cadastrarAdm(String login, String senha) {
+        
+        Administrador adm = new Administrador(login, senha);
+                
+        return null;
+    }
+        
     }
     
-    public  atribuirTimes(int times[]) throws Exception {
+    public int atribuirTimes(int times[]) throws Exception {
         for (time = 0; time < 32; time++)
         update time set.grupo 
         

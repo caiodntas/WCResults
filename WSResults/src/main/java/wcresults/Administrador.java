@@ -35,13 +35,7 @@ public class Administrador {
     }
     
     //OS GETTER JÁ NÃO SÃO O PROPRIO CADASTRAR ADM?
-    public static String cadastrarAdm(String login, String senha) {
-        Administrador adm = new Administrador(login, senha);
-        adm.setLogin(login);
-        adm.setSenha(senha);
-        
-        return null;
-    }
+    
     
     //PRECISA CRIAR UM MÉTODO PARA EXCLUIR ADM?
     
