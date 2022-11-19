@@ -15,7 +15,7 @@ public class Grupo {
         grupo.add("g");
         grupo.add("h");
         
-        /*ArrayList<Integer> grupo = new ArrayList<>();
+        ArrayList<Integer> grupo = new ArrayList<>();
         grupo.add(1);
         grupo.add(2);
         grupo.add(3);
@@ -25,9 +25,9 @@ public class Grupo {
         grupo.add(7);
         grupo.add(8);
         
-        for (String grupo == "a") {
+        for (String grupo == 1) {
             atribuirTimes();
             
-        }*/
+        }
     }
 }
