@@ -19,7 +19,8 @@ public class DAO {
     
     public  atribuirTimes(int times[]) throws Exception {
         for (time = 0; time < 32; time++)
-        String sql = "" 
+        update time set.grupo 
+        
         
     }
 }    
