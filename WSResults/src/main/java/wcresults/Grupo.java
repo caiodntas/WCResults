@@ -25,6 +25,41 @@ public class Grupo {
                 times [time] = 1;
                 vaga1++; time++;}
             break;
+            case 2:
+                if (vaga2 < 4) {
+                times [time] = 1;
+                vaga2++; time++;}
+            break;
+            case 3:
+                if (vaga3 < 4) {
+                times [time] = 1;
+                vaga3++; time++;}
+            break;
+            case 4:
+                if (vaga4 < 4) {
+                times [time] = 1;
+                vaga4++; time++;}
+            break;
+            case 5:
+                if (vaga5 < 4) {
+                times [time] = 1;
+                vaga5++; time++;}
+            break;
+            case 6:
+                if (vaga6 < 4) {
+                times [time] = 1;
+                vaga6++; time++;}
+            break;
+            case 7:
+                if (vaga7 < 4) {
+                times [time] = 1;
+                vaga7++; time++;}
+            break;
+            case 8:
+                if (vaga8 < 4) {
+                times [time] = 1;
+                vaga8++; time++;}
+            break;
         }
     }
 }    
