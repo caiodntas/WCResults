@@ -15,15 +15,21 @@ public class DAO {
                 return rs.next();
             }
         }
+    }
+    public void cadastrarAdm(Administrador administrador) throws Exception {
+        String sql = "INSERT INTO adm_table(login, senha) VALUES(?,?)";
+        try (Connection c = ConnectionFactory.obtemConexao();
+            PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, administrador.getLogin());
+            ps.setString(2, administrador.getSenha());
+            ps.execute();
+            ps.close();
+            }
+        }
     
-    public String cadastrarAdm(String login, String senha) {
+}
         
-        Administrador adm = new Administrador(login, senha);
-                
-        return null;
-    }
-        
-    }
+    
     
     public int atribuirTimes(int times[]) throws Exception {
         for (time = 0; time < 32; time++)
