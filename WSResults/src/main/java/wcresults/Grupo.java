@@ -1,33 +1,29 @@
 package wcresults;
-import java.awt.List;
-import java.util.ArrayList;
+import java.util.Random;
 
 public class Grupo {
     
-    public static void atribuirTimes() {
-        List grupo = new List (4, false);
-        grupo.add("a");
-        grupo.add("b");
-        grupo.add("c");
-        grupo.add("d");
-        grupo.add("e");
-        grupo.add("f");
-        grupo.add("g");
-        grupo.add("h");
-        
-        ArrayList<Integer> grupo = new ArrayList<>();
-        grupo.add(1);
-        grupo.add(2);
-        grupo.add(3);
-        grupo.add(4);
-        grupo.add(5);
-        grupo.add(6);
-        grupo.add(7);
-        grupo.add(8);
-        
-        for (String grupo == 1) {
-            atribuirTimes();
+    int times[] = new int [32];
+    
+    Random r = new Random();
+    int vaga1 = 0;
+    int vaga2 = 0;
+    int vaga3 = 0;
+    int vaga4 = 0;
+    int vaga5 = 0;
+    int vaga6 = 0;
+    int vaga7 = 0;
+    int vaga8 = 0;
+    
+    int time = 0;
+    
+    while (time < 32) {
+        grupo = r.nextInt(8)+1;
+        Switch (grupo) {
+            case 1: if (vaga1 < 4) {
+            times [times] = vaga1;
             
-        }
     }
+        }
+    }    
 }
