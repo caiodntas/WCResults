@@ -149,6 +149,7 @@ public class gerenciarTimes extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         //SUBSTITUIR COM OS 32 TIMES OFICIAS DA COPA A TABELA DE TIMES
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
