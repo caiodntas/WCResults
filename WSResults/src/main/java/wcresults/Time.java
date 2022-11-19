@@ -41,11 +41,10 @@ public class Time {
         this.oficial = oficial;
     }
     
-    Random random = new Random(32);
     
     public void importarOficiais(){
         //LIMPAR TABELA DE TIMES PARA RECEBER NOVOS
-        String cleanTable = "DELETE FROM time_table";
+        String cleanTable = "DELETE * FROM time_table";
         
         //GRUPO A
         String inserirQatar = "INSERT INTO time_table (nome, grupo) VALUES ('Qatar', 'A')";
