@@ -16,6 +16,12 @@ public class DAO {
             }
         }
     }
+    
+    public Grupo[] atribuirTimes() throws Exception {
+        for (time = 0; time < 32; time++)
+            
+        
+    }
 }    
 
 
