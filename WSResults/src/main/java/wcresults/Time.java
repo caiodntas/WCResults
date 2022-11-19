@@ -4,10 +4,10 @@ public class Time {
     private int codigo;
     private String nome;
     private Boolean oficial;
-    private  char grupo;
+    private int grupo;
     
     //construtor
-    public Time(int codigo, String nome, Boolean oficial, char grupo) {
+    public Time(int codigo, String nome, Boolean oficial, int grupo) {
         this.codigo = codigo;
         this.nome = nome;
         this.oficial = oficial;
@@ -40,11 +40,11 @@ public class Time {
         this.oficial = oficial;
     }
     
-    public char getGrupo() {
+    public int getGrupo() {
         return grupo;
     }
     
-    public void setGrupo(char grupo) {
+    public void setGrupo(int grupo) {
         this.grupo = grupo;
     }
     
