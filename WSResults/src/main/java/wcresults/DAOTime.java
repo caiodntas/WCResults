@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 
 
 public class DAOTime {
-    public boolean exibirTime (Time time) throws Exception {
+    public boolean exibirTabelaTime (Time time) throws Exception {
         String sql = "SELECT * FROM time_table";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
