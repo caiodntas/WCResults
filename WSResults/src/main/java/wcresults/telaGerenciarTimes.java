@@ -45,6 +45,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         loginMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("WC Results");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -138,8 +139,8 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(cadastroTimeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel1))
-                .addGap(69, 69, 69)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 326, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
         jPanel1Layout.setVerticalGroup(
@@ -171,7 +172,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         gerenciarTimesMenuBar.setMinimumSize(new java.awt.Dimension(378, 50));
         gerenciarTimesMenuBar.setName(""); // NOI18N
         gerenciarTimesMenuBar.setOpaque(true);
-        gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(378, 30));
+        gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(500, 30));
 
         inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         inicioMenu.setForeground(new java.awt.Color(255, 255, 255));

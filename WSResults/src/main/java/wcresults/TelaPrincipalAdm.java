@@ -1779,7 +1779,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenuBar1.setMinimumSize(new java.awt.Dimension(378, 50));
         jMenuBar1.setName(""); // NOI18N
         jMenuBar1.setOpaque(true);
-        jMenuBar1.setPreferredSize(new java.awt.Dimension(450, 30));
+        jMenuBar1.setPreferredSize(new java.awt.Dimension(600, 30));
 
         jMenu1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         jMenu1.setText("Início");
@@ -1814,7 +1814,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenu3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jMenu3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jMenu3.setMargin(new java.awt.Insets(6, 6, 6, 6));
-        jMenu3.setPreferredSize(new java.awt.Dimension(150, 19));
+        jMenu3.setPreferredSize(new java.awt.Dimension(180, 19));
         jMenuBar1.add(jMenu3);
 
         jMenu4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
