@@ -54,7 +54,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         confSenhaAdministradorTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        confSenhaAdministradorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Confirme a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        confSenhaAdministradorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         confSenhaAdministradorTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 confSenhaAdministradorTextFieldActionPerformed(evt);
@@ -71,7 +71,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             }
         });
 
-        administradoresTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        administradoresTable.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         administradoresTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         administradoresTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -108,7 +108,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         }
 
         loginAdministradorTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        loginAdministradorTextField1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        loginAdministradorTextField1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         loginAdministradorTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginAdministradorTextField1ActionPerformed(evt);
@@ -116,7 +116,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         });
 
         senhaAdministradorTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        senhaAdministradorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        senhaAdministradorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         senhaAdministradorTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 senhaAdministradorTextFieldActionPerformed(evt);
@@ -129,34 +129,27 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel1))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(confSenhaAdministradorTextField)
-                                    .addComponent(loginAdministradorTextField1)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(senhaAdministradorTextField)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addComponent(confSenhaAdministradorTextField)
+                            .addComponent(loginAdministradorTextField1)
+                            .addComponent(senhaAdministradorTextField)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(68, 68, 68)
                         .addComponent(cadastrarAdministradorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 411, Short.MAX_VALUE)
-                .addContainerGap())
+                        .addGap(71, 71, 71)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(112, 112, 112)
                         .addComponent(jLabel1)
@@ -167,8 +160,11 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(confSenhaAdministradorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(cadastrarAdministradorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(56, Short.MAX_VALUE))
+                        .addComponent(cadastrarAdministradorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         gerenciarTimesMenuBar.setBackground(new java.awt.Color(204, 0, 0));
@@ -182,7 +178,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         gerenciarTimesMenuBar.setOpaque(true);
         gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(450, 30));
 
-        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
         inicioMenu.setForeground(new java.awt.Color(255, 255, 255));
         inicioMenu.setText("Início");
         inicioMenu.setAlignmentX(1.0F);
@@ -194,7 +190,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         inicioMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(inicioMenu);
 
-        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
         gerenciarTimesMenu.setText("Gerenciar Times");
         gerenciarTimesMenu.setAlignmentX(1.0F);
         gerenciarTimesMenu.setAlignmentY(1.0F);
@@ -205,7 +201,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         gerenciarTimesMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(gerenciarTimesMenu);
 
-        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
         gerenciarAdmsMenu.setText("Gerenciar Administradores");
         gerenciarAdmsMenu.setAlignmentX(1.0F);
         gerenciarAdmsMenu.setAlignmentY(1.0F);
@@ -216,7 +212,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         gerenciarAdmsMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(gerenciarAdmsMenu);
 
-        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
         loginMenu.setText("Login Administrador");
         loginMenu.setAlignmentX(1.0F);
         loginMenu.setAlignmentY(1.0F);

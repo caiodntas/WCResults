@@ -54,7 +54,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         cadastroTimeTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        cadastroTimeTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira o nome do time", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        cadastroTimeTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         cadastroTimeTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cadastroTimeTextFieldActionPerformed(evt);
@@ -82,7 +82,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
             }
         });
 
-        timesTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        timesTable.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         timesTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         timesTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -117,7 +117,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         }
 
         idTimeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        idTimeComboBox.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ID", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        idTimeComboBox.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         idTimeComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idTimeComboBoxActionPerformed(evt);
@@ -140,28 +140,27 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
                             .addComponent(cadastroTimeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE)
-                .addGap(16, 16, 16))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE)
+                .addGap(15, 15, 15))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(112, 112, 112)
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(idTimeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cadastroTimeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(33, 33, 33)
-                        .addComponent(cadastrarTimeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(importarOficiaisButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addGap(112, 112, 112)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(idTimeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cadastroTimeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addComponent(cadastrarTimeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(importarOficiaisButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
         );
 
         gerenciarTimesMenuBar.setBackground(new java.awt.Color(204, 0, 0));
@@ -174,7 +173,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         gerenciarTimesMenuBar.setOpaque(true);
         gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(500, 30));
 
-        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
         inicioMenu.setForeground(new java.awt.Color(255, 255, 255));
         inicioMenu.setText("Início");
         inicioMenu.setAlignmentX(1.0F);
@@ -186,7 +185,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         inicioMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(inicioMenu);
 
-        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
         gerenciarTimesMenu.setText("Gerenciar Times");
         gerenciarTimesMenu.setAlignmentX(1.0F);
         gerenciarTimesMenu.setAlignmentY(1.0F);
@@ -197,7 +196,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         gerenciarTimesMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(gerenciarTimesMenu);
 
-        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
         gerenciarAdmsMenu.setText("Gerenciar Administradores");
         gerenciarAdmsMenu.setAlignmentX(1.0F);
         gerenciarAdmsMenu.setAlignmentY(1.0F);
@@ -208,7 +207,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         gerenciarAdmsMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(gerenciarAdmsMenu);
 
-        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
         loginMenu.setText("Login Administrador");
         loginMenu.setAlignmentX(1.0F);
         loginMenu.setAlignmentY(1.0F);
@@ -229,7 +228,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
