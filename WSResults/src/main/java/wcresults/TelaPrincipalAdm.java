@@ -155,6 +155,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jComboBox59 = new javax.swing.JComboBox<>();
         jComboBox60 = new javax.swing.JComboBox<>();
         label16 = new java.awt.Label();
+        gerenciarTimesMenuBar = new javax.swing.JMenuBar();
+        inicioMenu = new javax.swing.JMenu();
+        gerenciarTimesMenu = new javax.swing.JMenu();
+        gerenciarAdmsMenu = new javax.swing.JMenu();
+        loginMenu = new javax.swing.JMenu();
         jPanel53 = new javax.swing.JPanel();
         jPanel56 = new javax.swing.JPanel();
         jPanel54 = new javax.swing.JPanel();
@@ -1934,6 +1939,57 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        gerenciarTimesMenuBar.setBorder(null);
+        gerenciarTimesMenuBar.setAutoscrolls(true);
+        gerenciarTimesMenuBar.setMaximumSize(new java.awt.Dimension(378, 400));
+        gerenciarTimesMenuBar.setMinimumSize(new java.awt.Dimension(378, 50));
+        gerenciarTimesMenuBar.setName(""); // NOI18N
+        gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(378, 30));
+
+        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        inicioMenu.setText("Início");
+        inicioMenu.setAlignmentX(1.0F);
+        inicioMenu.setAlignmentY(1.0F);
+        inicioMenu.setAutoscrolls(true);
+        inicioMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        inicioMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        inicioMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        inicioMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarTimesMenuBar.add(inicioMenu);
+
+        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        gerenciarTimesMenu.setText("Gerenciar Times");
+        gerenciarTimesMenu.setAlignmentX(1.0F);
+        gerenciarTimesMenu.setAlignmentY(1.0F);
+        gerenciarTimesMenu.setAutoscrolls(true);
+        gerenciarTimesMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        gerenciarTimesMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        gerenciarTimesMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        gerenciarTimesMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarTimesMenuBar.add(gerenciarTimesMenu);
+
+        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        gerenciarAdmsMenu.setText("Gerenciar Administradores");
+        gerenciarAdmsMenu.setAlignmentX(1.0F);
+        gerenciarAdmsMenu.setAlignmentY(1.0F);
+        gerenciarAdmsMenu.setAutoscrolls(true);
+        gerenciarAdmsMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        gerenciarAdmsMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        gerenciarAdmsMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        gerenciarAdmsMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarTimesMenuBar.add(gerenciarAdmsMenu);
+
+        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        loginMenu.setText("Login Administrador");
+        loginMenu.setAlignmentX(1.0F);
+        loginMenu.setAlignmentY(1.0F);
+        loginMenu.setAutoscrolls(true);
+        loginMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        loginMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loginMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        loginMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarTimesMenuBar.add(loginMenu);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
@@ -3647,6 +3703,10 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu gerenciarAdmsMenu;
+    private javax.swing.JMenu gerenciarTimesMenu;
+    private javax.swing.JMenuBar gerenciarTimesMenuBar;
+    private javax.swing.JMenu inicioMenu;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox11;
@@ -3935,5 +3995,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private java.awt.Label label7;
     private java.awt.Label label8;
     private java.awt.Label label9;
+    private javax.swing.JMenu loginMenu;
     // End of variables declaration//GEN-END:variables
 }

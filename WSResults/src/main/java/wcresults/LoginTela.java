@@ -39,29 +39,60 @@ public class LoginTela extends javax.swing.JFrame {
         loginButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setTitle("Login");
 
-        loginTextField.setBorder(javax.swing.BorderFactory.createTitledBorder("Digite seu login"));
-        getContentPane().add(loginTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 42, 270, 60));
+        loginTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        loginTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Digite seu login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
-        senhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder("Digite sua senha"));
-        getContentPane().add(senhaPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 142, 270, 60));
+        senhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Digite sua senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
+        sairButton.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         sairButton.setText("Sair");
         sairButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sairButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(sairButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(84, 243, 90, 52));
 
+        loginButton.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         loginButton.setText("Login");
         loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 243, 90, 52));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(132, 132, 132)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(senhaPasswordField)
+                            .addComponent(loginTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(149, 149, 149)
+                        .addComponent(sairButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(139, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(loginTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(senhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(sairButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(64, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -75,16 +106,16 @@ public class LoginTela extends javax.swing.JFrame {
         String login = loginTextField.getText();
         String senha = new String(senhaPasswordField.getPassword());
         try {
-            Administrador adm = new Administrador(login, senha);
-            DAOAdm dao = new DAOAdm();
-            if (dao.existeAdm(adm)) {
+            Usuario usuario = new Usuario(login, senha);
+            DAO dao = new DAO();
+            if (dao.existeUsuario(usuario)) {
                 //JOptionPane.showMessageDialog(null, "Bem-vindo, " + usuario.getNome());
-                TelaPrincipalAdm tela = new TelaPrincipalAdm();
-                tela.setVisible(true);
+                Dashboard db = new Dashboard();
+                db.setVisible(true);
                 this.dispose();
             }
             else {
-                JOptionPane.showMessageDialog(null, "Usuário ou senha inválidos.");
+                JOptionPane.showMessageDialog(null, "Oh-Oh");
             }
         }
         catch (Exception e) {
