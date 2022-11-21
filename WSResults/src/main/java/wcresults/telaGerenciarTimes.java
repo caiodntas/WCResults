@@ -32,7 +32,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        cadastroTimeTextField = new javax.swing.JTextField();
+        txtTime = new javax.swing.JTextField();
         cadastrarTimeButton = new javax.swing.JButton();
         importarOficiaisButton = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -53,11 +53,11 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         jLabel1.setText("ALTERAR TIME CADASTRADO");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        cadastroTimeTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        cadastroTimeTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
-        cadastroTimeTextField.addActionListener(new java.awt.event.ActionListener() {
+        txtTime.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txtTime.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira o nome do time", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        txtTime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cadastroTimeTextFieldActionPerformed(evt);
+                txtTimeActionPerformed(evt);
             }
         });
 
@@ -82,7 +82,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
             }
         });
 
-        timesTable.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        timesTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         timesTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         timesTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -117,7 +117,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         }
 
         idTimeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        idTimeComboBox.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        idTimeComboBox.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ID", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         idTimeComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idTimeComboBoxActionPerformed(evt);
@@ -137,7 +137,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addComponent(idTimeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(cadastroTimeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtTime, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE)
@@ -151,7 +151,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(idTimeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cadastroTimeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTime, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addComponent(cadastrarTimeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -173,7 +173,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         gerenciarTimesMenuBar.setOpaque(true);
         gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(500, 30));
 
-        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
+        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         inicioMenu.setForeground(new java.awt.Color(255, 255, 255));
         inicioMenu.setText("Início");
         inicioMenu.setAlignmentX(1.0F);
@@ -183,9 +183,14 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         inicioMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         inicioMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         inicioMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        inicioMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                inicioMenuActionPerformed(evt);
+            }
+        });
         gerenciarTimesMenuBar.add(inicioMenu);
 
-        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
+        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         gerenciarTimesMenu.setText("Gerenciar Times");
         gerenciarTimesMenu.setAlignmentX(1.0F);
         gerenciarTimesMenu.setAlignmentY(1.0F);
@@ -194,9 +199,14 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         gerenciarTimesMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gerenciarTimesMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gerenciarTimesMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarTimesMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gerenciarTimesMenuActionPerformed(evt);
+            }
+        });
         gerenciarTimesMenuBar.add(gerenciarTimesMenu);
 
-        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
+        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         gerenciarAdmsMenu.setText("Gerenciar Administradores");
         gerenciarAdmsMenu.setAlignmentX(1.0F);
         gerenciarAdmsMenu.setAlignmentY(1.0F);
@@ -205,9 +215,14 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         gerenciarAdmsMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gerenciarAdmsMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gerenciarAdmsMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarAdmsMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gerenciarAdmsMenuActionPerformed(evt);
+            }
+        });
         gerenciarTimesMenuBar.add(gerenciarAdmsMenu);
 
-        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
+        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         loginMenu.setText("Login Administrador");
         loginMenu.setAlignmentX(1.0F);
         loginMenu.setAlignmentY(1.0F);
@@ -216,6 +231,11 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         loginMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         loginMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         loginMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        loginMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginMenuActionPerformed(evt);
+            }
+        });
         gerenciarTimesMenuBar.add(loginMenu);
 
         setJMenuBar(gerenciarTimesMenuBar);
@@ -247,9 +267,31 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cadastrarTimeButtonActionPerformed
 
-    private void cadastroTimeTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroTimeTextFieldActionPerformed
+    private void txtTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTimeActionPerformed
 
-    }//GEN-LAST:event_cadastroTimeTextFieldActionPerformed
+    }//GEN-LAST:event_txtTimeActionPerformed
+
+    private void inicioMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicioMenuActionPerformed
+        // Chamando a Tela Principal de Administrador
+        new telaPrincipalAdm().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_inicioMenuActionPerformed
+
+    private void gerenciarTimesMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gerenciarTimesMenuActionPerformed
+
+    }//GEN-LAST:event_gerenciarTimesMenuActionPerformed
+
+    private void gerenciarAdmsMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gerenciarAdmsMenuActionPerformed
+        // Ir para a tela Gerenciar Administradores
+        new telaGerenciarAdministradores().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_gerenciarAdmsMenuActionPerformed
+
+    private void loginMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginMenuActionPerformed
+        // TODO add your handling code here
+        new telaGerenciarAdministradores().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_loginMenuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -289,7 +331,6 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cadastrarTimeButton;
-    private javax.swing.JTextField cadastroTimeTextField;
     private javax.swing.JMenu gerenciarAdmsMenu;
     private javax.swing.JMenu gerenciarTimesMenu;
     private javax.swing.JMenuBar gerenciarTimesMenuBar;
@@ -301,5 +342,6 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JMenu loginMenu;
     private javax.swing.JTable timesTable;
+    private javax.swing.JTextField txtTime;
     // End of variables declaration//GEN-END:variables
 }
