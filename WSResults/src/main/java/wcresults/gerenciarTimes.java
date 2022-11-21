@@ -46,6 +46,8 @@ public class gerenciarTimes extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("ALTERAR TIME CADASTRADO");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -58,7 +60,9 @@ public class gerenciarTimes extends javax.swing.JFrame {
             }
         });
 
+        cadastrarTimeButton.setBackground(new java.awt.Color(153, 0, 0));
         cadastrarTimeButton.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        cadastrarTimeButton.setForeground(new java.awt.Color(255, 255, 255));
         cadastrarTimeButton.setText("ALTERAR TIME");
         cadastrarTimeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,8 +70,11 @@ public class gerenciarTimes extends javax.swing.JFrame {
             }
         });
 
+        importarOficiaisButton.setBackground(new java.awt.Color(153, 0, 0));
         importarOficiaisButton.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        importarOficiaisButton.setForeground(new java.awt.Color(255, 255, 255));
         importarOficiaisButton.setText("IMPORTAR OFICIAIS");
+        importarOficiaisButton.setOpaque(true);
         importarOficiaisButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 importarOficiaisButtonActionPerformed(evt);
@@ -132,7 +139,7 @@ public class gerenciarTimes extends javax.swing.JFrame {
                             .addComponent(cadastroTimeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel1))
                 .addGap(69, 69, 69)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 326, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
         jPanel1Layout.setVerticalGroup(
@@ -153,17 +160,21 @@ public class gerenciarTimes extends javax.swing.JFrame {
                         .addComponent(cadastrarTimeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(importarOficiaisButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
+        gerenciarTimesMenuBar.setBackground(new java.awt.Color(204, 0, 0));
         gerenciarTimesMenuBar.setBorder(null);
+        gerenciarTimesMenuBar.setForeground(new java.awt.Color(255, 255, 255));
         gerenciarTimesMenuBar.setAutoscrolls(true);
         gerenciarTimesMenuBar.setMaximumSize(new java.awt.Dimension(378, 400));
         gerenciarTimesMenuBar.setMinimumSize(new java.awt.Dimension(378, 50));
         gerenciarTimesMenuBar.setName(""); // NOI18N
+        gerenciarTimesMenuBar.setOpaque(true);
         gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(378, 30));
 
         inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        inicioMenu.setForeground(new java.awt.Color(255, 255, 255));
         inicioMenu.setText("Início");
         inicioMenu.setAlignmentX(1.0F);
         inicioMenu.setAlignmentY(1.0F);
@@ -213,15 +224,11 @@ public class gerenciarTimes extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

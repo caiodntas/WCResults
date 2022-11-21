@@ -15,7 +15,6 @@ public class Time {
     }
     
     //getters and setters
-
     public int getCodigo() {
         return codigo;
     }
