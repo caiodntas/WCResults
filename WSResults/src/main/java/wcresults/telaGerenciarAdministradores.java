@@ -171,7 +171,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         );
 
         gerenciarTimesMenuBar.setBackground(new java.awt.Color(204, 0, 0));
-        gerenciarTimesMenuBar.setBorder(null);
+        gerenciarTimesMenuBar.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         gerenciarTimesMenuBar.setForeground(new java.awt.Color(255, 255, 255));
         gerenciarTimesMenuBar.setAutoscrolls(true);
         gerenciarTimesMenuBar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N

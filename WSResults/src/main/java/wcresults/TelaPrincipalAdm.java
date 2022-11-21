@@ -187,6 +187,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 720));
@@ -1767,26 +1768,64 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         );
 
         jMenuBar1.setBackground(new java.awt.Color(204, 0, 0));
-        jMenuBar1.setBorder(null);
+        jMenuBar1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jMenuBar1.setForeground(new java.awt.Color(255, 255, 255));
         jMenuBar1.setToolTipText("");
-        jMenuBar1.setBorderPainted(false);
+        jMenuBar1.setAlignmentY(1.0F);
+        jMenuBar1.setAutoscrolls(true);
         jMenuBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jMenuBar1.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jMenuBar1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jMenuBar1.setMaximumSize(new java.awt.Dimension(378, 400));
+        jMenuBar1.setMinimumSize(new java.awt.Dimension(378, 50));
         jMenuBar1.setName(""); // NOI18N
+        jMenuBar1.setOpaque(true);
+        jMenuBar1.setPreferredSize(new java.awt.Dimension(378, 30));
 
+        jMenu1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         jMenu1.setText("Início");
+        jMenu1.setAlignmentX(1.0F);
+        jMenu1.setAlignmentY(1.0F);
         jMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jMenu1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMenu1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jMenu1.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        jMenu1.setPreferredSize(new java.awt.Dimension(129, 19));
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         jMenu2.setText("Gerenciar Times");
+        jMenu2.setAlignmentX(1.0F);
+        jMenu2.setAlignmentY(1.0F);
         jMenu2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jMenu2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMenu2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jMenu2.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        jMenu2.setPreferredSize(new java.awt.Dimension(129, 19));
         jMenuBar1.add(jMenu2);
 
+        jMenu3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         jMenu3.setText("Gerenciar Administradores");
+        jMenu3.setAlignmentX(1.0F);
+        jMenu3.setAlignmentY(1.0F);
         jMenu3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jMenu3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMenu3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jMenu3.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        jMenu3.setPreferredSize(new java.awt.Dimension(129, 19));
         jMenuBar1.add(jMenu3);
+
+        jMenu4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        jMenu4.setText("Login Administrador");
+        jMenu4.setAlignmentX(1.0F);
+        jMenu4.setAlignmentY(1.0F);
+        jMenu4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jMenu4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jMenu4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jMenu4.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        jMenuBar1.add(jMenu4);
 
         setJMenuBar(jMenuBar1);
 
@@ -1960,6 +1999,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel53;
     private javax.swing.JPanel jPanel54;
