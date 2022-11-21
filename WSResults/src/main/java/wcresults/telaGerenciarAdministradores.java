@@ -45,6 +45,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         loginMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("WC Results");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -167,7 +168,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
                         .addComponent(confSenhaAdministradorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(cadastrarAdministradorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
         gerenciarTimesMenuBar.setBackground(new java.awt.Color(204, 0, 0));
@@ -179,7 +180,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         gerenciarTimesMenuBar.setMinimumSize(new java.awt.Dimension(378, 50));
         gerenciarTimesMenuBar.setName(""); // NOI18N
         gerenciarTimesMenuBar.setOpaque(true);
-        gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(378, 30));
+        gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(450, 30));
 
         inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         inicioMenu.setForeground(new java.awt.Color(255, 255, 255));
