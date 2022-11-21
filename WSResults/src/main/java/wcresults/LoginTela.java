@@ -144,11 +144,11 @@ public class LoginTela extends javax.swing.JFrame {
         String login = loginTextField.getText();
         String senha = new String(senhaPasswordField.getPassword());
         try {
-            Usuario usuario = new Usuario(login, senha);
-            DAO dao = new DAO();
-            if (dao.existeUsuario(usuario)) {
+            Administrador adm = new Administrador(login, senha);
+            DAOAdm dao = new DAOAdm();
+            if (dao.existeAdm(adm)) {
                 //JOptionPane.showMessageDialog(null, "Bem-vindo, " + usuario.getNome());
-                Dashboard db = new Dashboard();
+                telaGerenciarTimes db = new telaGerenciarTimes();
                 db.setVisible(true);
                 this.dispose();
             }
@@ -191,6 +191,7 @@ public class LoginTela extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new LoginTela().setVisible(true);
             }
