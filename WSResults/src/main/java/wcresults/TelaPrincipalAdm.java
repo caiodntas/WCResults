@@ -2260,6 +2260,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenu2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jMenu2.setMargin(new java.awt.Insets(6, 6, 6, 6));
         jMenu2.setPreferredSize(new java.awt.Dimension(129, 19));
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
         jMenuBar1.add(jMenu2);
 
         jMenu3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
@@ -2305,6 +2310,21 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    TelaPrincipalAdm telaAdm = new TelaPrincipalAdm();
+    
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        // TODO add your handling code here:
+        if (telaAdm == null) {
+            telaAdm = new TelaPrincipalAdm();
+            telaAdm.setLocationRelativeTo(null);
+            telaAdm.setVisible(true);
+            telaAdm.setResizable(false);
+        } else {
+            telaAdm.setLocationRelativeTo(null);
+            telaAdm.setVisible(true);
+            telaAdm.setResizable(false);
+        }
+    }//GEN-LAST:event_jMenu2ActionPerformed
 
     /**
      * @param args the command line arguments
