@@ -8,12 +8,13 @@ package wcresults;
  *
  * @author 822161401
  */
-public class TelaPrincipalAdm extends javax.swing.JFrame {
+public class TelaPrincipalUser extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaPrincipalAdm
      */
-    public TelaPrincipalAdm() {
+    public TelaPrincipalUser() {
+        super("Tela Inicial");
         initComponents();
         setLocationRelativeTo(null);
     }
