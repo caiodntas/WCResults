@@ -66,7 +66,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         });
 
         administradoresTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        administradoresTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        administradoresTable.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         administradoresTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -100,7 +100,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             administradoresTable.getColumnModel().getColumn(1).setMaxWidth(200);
         }
 
-        loginAdministradorTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        loginAdministradorTextField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         loginAdministradorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         loginAdministradorTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,9 +108,11 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             }
         });
 
+        confSenhaPasswordField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         confSenhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Confirme a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         confSenhaPasswordField.setPreferredSize(new java.awt.Dimension(64, 39));
 
+        senhaPasswordField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         senhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         senhaPasswordField.setPreferredSize(new java.awt.Dimension(64, 39));
 
@@ -147,7 +149,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
                         .addComponent(loginAdministradorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(senhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(confSenhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
