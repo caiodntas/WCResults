@@ -19,7 +19,6 @@ public class LoginTela extends javax.swing.JFrame {
      * Creates new form LoginTella
      */
     public LoginTela() {
-        super("Tela Inicial");
         initComponents();
         setLocationRelativeTo(null);
     }
