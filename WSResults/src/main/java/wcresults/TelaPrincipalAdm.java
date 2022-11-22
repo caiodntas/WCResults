@@ -4,6 +4,8 @@
  */
 package wcresults;
 
+import java.awt.List;
+
 /**
  *
  * @author 822161401
@@ -2545,9 +2547,9 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
-    public static void carregaTimes() {
+    public static void carregaTimes() throws Exception {
         DAOTime daot = new DAOTime();
-        List times = daot.buscarTimes();
+        List times = (List) daot.buscarTimes();
         int timesGrupos[] = Grupo.sorteioTimes();
         int i = 0;
         for (Time t : times){
