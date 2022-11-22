@@ -244,7 +244,8 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Senhas não coincidem");
             }
             else {
-                JOptionPane.showMessageDialog(null, "Administrador cadastrado");    
+                dao.cadastrarAdm(adm);
+                JOptionPane.showMessageDialog(null, "Administrador cadastrado");
             }
         }
         catch (Exception e) {

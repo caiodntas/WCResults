@@ -36,7 +36,7 @@ public class DAOTime {
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, time.getNome());
-            ps.setString(2, time.getGrupo());
+            ps.setString(2, Integer.toString(time.getGrupo()));
             ps.execute();
             ps.close();
             }
