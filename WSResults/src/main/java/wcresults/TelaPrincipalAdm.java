@@ -324,7 +324,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                     .addComponent(jLabel8)
                     .addComponent(jLabel9)
                     .addComponent(jLabel10))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2242,7 +2242,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenu1.setText("Início");
         jMenu1.setAlignmentX(1.0F);
         jMenu1.setAlignmentY(1.0F);
-        jMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jMenu1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jMenu1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jMenu1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2254,7 +2254,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenu2.setText("Gerenciar Times");
         jMenu2.setAlignmentX(1.0F);
         jMenu2.setAlignmentY(1.0F);
-        jMenu2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jMenu2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jMenu2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jMenu2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2271,7 +2271,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenu3.setText("Gerenciar Administradores");
         jMenu3.setAlignmentX(1.0F);
         jMenu3.setAlignmentY(1.0F);
-        jMenu3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jMenu3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jMenu3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jMenu3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -2545,4 +2545,13 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
+    public static void carregaTimes() {
+        DAOTime daot = new DAOTime();
+        List times = daot.buscarTimes();
+        int timesGrupos[] = Grupo.sorteioTimes();
+        int i = 0;
+        for (Time t : times){
+            t.setGrupo(timesGrupos[i++]);
+        }
+    }
 }

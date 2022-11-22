@@ -147,7 +147,6 @@ public class LoginTela extends javax.swing.JFrame {
             Administrador adm = new Administrador(login, senha);
             DAOAdm dao = new DAOAdm();
             if (dao.existeAdm(adm)) {
-                //JOptionPane.showMessageDialog(null, "Bem-vindo, " + usuario.getNome());
                 telaGerenciarTimes db = new telaGerenciarTimes();
                 db.setVisible(true);
                 this.dispose();
