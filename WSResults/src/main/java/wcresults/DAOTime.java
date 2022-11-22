@@ -27,9 +27,8 @@ public class DAOTime {
             }
     }
     
-    public int atribuirTimes(int times[]) throws Exception {
-        for (time = 0; time < 32; time++)
-        update time set.grupo    
+    public List buscarTimes() throws Exception {
+         
     }
     
     public void atribuirTimesOficiais(Time time) throws Exception {

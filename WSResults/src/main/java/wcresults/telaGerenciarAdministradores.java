@@ -5,6 +5,8 @@
  */
 package wcresults;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 822161401
@@ -32,12 +34,12 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        confSenhaAdministradorTextField = new javax.swing.JTextField();
         cadastrarAdministradorButton = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         administradoresTable = new javax.swing.JTable();
-        loginAdministradorTextField1 = new javax.swing.JTextField();
-        senhaAdministradorTextField = new javax.swing.JTextField();
+        loginAdministradorTextField = new javax.swing.JTextField();
+        confSenhaPasswordField = new javax.swing.JPasswordField();
+        senhaPasswordField = new javax.swing.JPasswordField();
         gerenciarTimesMenuBar = new javax.swing.JMenuBar();
         inicioMenu = new javax.swing.JMenu();
         gerenciarTimesMenu = new javax.swing.JMenu();
@@ -53,14 +55,6 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         jLabel1.setText("CADASTRAR ADMINISTRADOR");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        confSenhaAdministradorTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        confSenhaAdministradorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
-        confSenhaAdministradorTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                confSenhaAdministradorTextFieldActionPerformed(evt);
-            }
-        });
-
         cadastrarAdministradorButton.setBackground(new java.awt.Color(153, 0, 0));
         cadastrarAdministradorButton.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         cadastrarAdministradorButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -71,7 +65,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             }
         });
 
-        administradoresTable.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        administradoresTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         administradoresTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         administradoresTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -97,7 +91,6 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             }
         });
         administradoresTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        administradoresTable.setShowGrid(true);
         administradoresTable.getTableHeader().setReorderingAllowed(false);
         jScrollPane2.setViewportView(administradoresTable);
         if (administradoresTable.getColumnModel().getColumnCount() > 0) {
@@ -107,21 +100,19 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             administradoresTable.getColumnModel().getColumn(1).setMaxWidth(200);
         }
 
-        loginAdministradorTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        loginAdministradorTextField1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
-        loginAdministradorTextField1.addActionListener(new java.awt.event.ActionListener() {
+        loginAdministradorTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        loginAdministradorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        loginAdministradorTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginAdministradorTextField1ActionPerformed(evt);
+                loginAdministradorTextFieldActionPerformed(evt);
             }
         });
 
-        senhaAdministradorTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        senhaAdministradorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
-        senhaAdministradorTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                senhaAdministradorTextFieldActionPerformed(evt);
-            }
-        });
+        confSenhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Confirme a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        confSenhaPasswordField.setPreferredSize(new java.awt.Dimension(64, 39));
+
+        senhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        senhaPasswordField.setPreferredSize(new java.awt.Dimension(64, 39));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -129,41 +120,40 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(confSenhaAdministradorTextField)
-                            .addComponent(loginAdministradorTextField1)
-                            .addComponent(senhaAdministradorTextField)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(68, 68, 68)
                         .addComponent(cadastrarAdministradorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(71, 71, 71)))
-                .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(loginAdministradorTextField)
+                            .addComponent(confSenhaPasswordField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(senhaPasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel1)))
+                        .addGap(18, 18, 18)))
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(112, 112, 112)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
-                        .addComponent(loginAdministradorTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(senhaAdministradorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(confSenhaAdministradorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(loginAdministradorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(cadastrarAdministradorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(senhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(confSenhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(cadastrarAdministradorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(69, 69, 69)))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
@@ -178,7 +168,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         gerenciarTimesMenuBar.setOpaque(true);
         gerenciarTimesMenuBar.setPreferredSize(new java.awt.Dimension(450, 30));
 
-        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
+        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         inicioMenu.setForeground(new java.awt.Color(255, 255, 255));
         inicioMenu.setText("Início");
         inicioMenu.setAlignmentX(1.0F);
@@ -190,7 +180,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         inicioMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(inicioMenu);
 
-        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
+        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         gerenciarTimesMenu.setText("Gerenciar Times");
         gerenciarTimesMenu.setAlignmentX(1.0F);
         gerenciarTimesMenu.setAlignmentY(1.0F);
@@ -201,7 +191,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         gerenciarTimesMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(gerenciarTimesMenu);
 
-        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
+        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         gerenciarAdmsMenu.setText("Gerenciar Administradores");
         gerenciarAdmsMenu.setAlignmentX(1.0F);
         gerenciarAdmsMenu.setAlignmentY(1.0F);
@@ -212,7 +202,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         gerenciarAdmsMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(gerenciarAdmsMenu);
 
-        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), null));
+        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         loginMenu.setText("Login Administrador");
         loginMenu.setAlignmentX(1.0F);
         loginMenu.setAlignmentY(1.0F);
@@ -240,20 +230,31 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cadastrarAdministradorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarAdministradorButtonActionPerformed
-        // TODO add your handling code here:
+        String login = loginAdministradorTextField.getText();
+        String senha = senhaPasswordField.getText();
+        String confSenha = confSenhaPasswordField.getText();
+        
+        try {
+            Administrador adm = new Administrador(login, senha);
+            DAOAdm dao = new DAOAdm();
+            if (dao.existeAdm(adm)) {
+                JOptionPane.showMessageDialog(null, "Administrador já existente");
+            }
+            else if (!senha.equals(confSenha)) {
+                JOptionPane.showMessageDialog(null, "Senhas não coincidem");
+            }
+            else {
+                JOptionPane.showMessageDialog(null, "Administrador cadastrado");    
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }    
     }//GEN-LAST:event_cadastrarAdministradorButtonActionPerformed
 
-    private void confSenhaAdministradorTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confSenhaAdministradorTextFieldActionPerformed
-
-    }//GEN-LAST:event_confSenhaAdministradorTextFieldActionPerformed
-
-    private void loginAdministradorTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginAdministradorTextField1ActionPerformed
+    private void loginAdministradorTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginAdministradorTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_loginAdministradorTextField1ActionPerformed
-
-    private void senhaAdministradorTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaAdministradorTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_senhaAdministradorTextFieldActionPerformed
+    }//GEN-LAST:event_loginAdministradorTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -294,7 +295,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable administradoresTable;
     private javax.swing.JButton cadastrarAdministradorButton;
-    private javax.swing.JTextField confSenhaAdministradorTextField;
+    private javax.swing.JPasswordField confSenhaPasswordField;
     private javax.swing.JMenu gerenciarAdmsMenu;
     private javax.swing.JMenu gerenciarTimesMenu;
     private javax.swing.JMenuBar gerenciarTimesMenuBar;
@@ -302,8 +303,8 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField loginAdministradorTextField1;
+    private javax.swing.JTextField loginAdministradorTextField;
     private javax.swing.JMenu loginMenu;
-    private javax.swing.JTextField senhaAdministradorTextField;
+    private javax.swing.JPasswordField senhaPasswordField;
     // End of variables declaration//GEN-END:variables
 }
