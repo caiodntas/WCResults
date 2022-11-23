@@ -2316,20 +2316,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    TelaPrincipalAdm telaAdm = new TelaPrincipalAdm();
     
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
         // TODO add your handling code here:
-        if (telaAdm == null) {
-            telaAdm = new TelaPrincipalAdm();
-            telaAdm.setLocationRelativeTo(null);
-            telaAdm.setVisible(true);
-            telaAdm.setResizable(false);
-        } else {
-            telaAdm.setLocationRelativeTo(null);
-            telaAdm.setVisible(true);
-            telaAdm.setResizable(false);
-        }
+        telaGerenciarTimes vs = new telaGerenciarTimes();
+        vs.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jMenu2ActionPerformed
 
     private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
