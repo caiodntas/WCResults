@@ -2278,7 +2278,6 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void visualizarTimesMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visualizarTimesMenuActionPerformed
-        this.setVisible(false);
         telaVisualizarTimes vs = new telaVisualizarTimes();
         vs.setVisible(true);
     }//GEN-LAST:event_visualizarTimesMenuActionPerformed
