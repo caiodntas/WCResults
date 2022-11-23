@@ -118,7 +118,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         confSenhaPasswordField.setSelectionEnd(11);
         confSenhaPasswordField.setSelectionStart(11);
 
-        senhaPasswordField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        senhaPasswordField.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         senhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         senhaPasswordField.setPreferredSize(new java.awt.Dimension(64, 39));
         senhaPasswordField.setSelectionEnd(11);
@@ -160,7 +160,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(loginAdministradorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(senhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(senhaPasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(confSenhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
