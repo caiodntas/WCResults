@@ -107,17 +107,27 @@ public class LoginTela extends javax.swing.JFrame {
         jMenu1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jMenu1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jMenu1.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu1MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu1);
 
         jMenu2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         jMenu2.setForeground(new java.awt.Color(255, 255, 255));
-        jMenu2.setText("Visualizar Lista de Times");
+        jMenu2.setText("Visualizar Times");
         jMenu2.setAlignmentX(1.0F);
         jMenu2.setAlignmentY(1.0F);
         jMenu2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jMenu2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jMenu2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jMenu2.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu2MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -158,6 +168,20 @@ public class LoginTela extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }//GEN-LAST:event_loginButtonActionPerformed
+
+    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
+        // IR PARA A TELA DE VISUALIZAR TIMES
+        telaVisualizarTimes vs = new telaVisualizarTimes();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jMenu2MouseClicked
+
+    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
+        // VOLTAR PARA A TELA PRINCIPAL
+        TelaPrincipalUser vs = new TelaPrincipalUser();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jMenu1MouseClicked
 
     /**
      * @param args the command line arguments

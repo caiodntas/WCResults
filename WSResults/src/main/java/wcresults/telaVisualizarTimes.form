@@ -54,6 +54,9 @@
               <Insets value="[6, 6, 6, 6]"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="inicioMenuMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="gerenciarTimesMenu">
           <Properties>
@@ -100,6 +103,9 @@
               <Insets value="[6, 6, 6, 6]"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="loginMenuMouseClicked"/>
+          </Events>
         </Menu>
       </SubComponents>
     </Menu>
