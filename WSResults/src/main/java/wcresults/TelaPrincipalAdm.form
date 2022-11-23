@@ -1955,8 +1955,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel104" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel105" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="timeSemiFinalLabel1L" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="timeSemiFinalLabel2L" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -1966,16 +1966,16 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                          <Component id="jLabel104" min="-2" max="-2" attributes="0"/>
+                          <Component id="timeSemiFinalLabel1L" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                          <Component id="jLabel105" min="-2" max="-2" attributes="0"/>
+                          <Component id="timeSemiFinalLabel2L" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel104">
+                <Component class="javax.swing.JLabel" name="timeSemiFinalLabel1L">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="14" style="1"/>
@@ -1983,7 +1983,7 @@
                     <Property name="text" type="java.lang.String" value="TIME"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel105">
+                <Component class="javax.swing.JLabel" name="timeSemiFinalLabel2L">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="14" style="1"/>
@@ -3662,8 +3662,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel107" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel108" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="timesSemiFinalLabel1R" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="timesSemiFinalLabel2R" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -3673,16 +3673,16 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                          <Component id="jLabel107" min="-2" max="-2" attributes="0"/>
+                          <Component id="timesSemiFinalLabel1R" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                          <Component id="jLabel108" min="-2" max="-2" attributes="0"/>
+                          <Component id="timesSemiFinalLabel2R" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel107">
+                <Component class="javax.swing.JLabel" name="timesSemiFinalLabel1R">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="14" style="1"/>
@@ -3690,7 +3690,7 @@
                     <Property name="text" type="java.lang.String" value="TIME"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel108">
+                <Component class="javax.swing.JLabel" name="timesSemiFinalLabel2R">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="14" style="1"/>
@@ -3747,8 +3747,8 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel111" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel112" min="-2" max="-2" attributes="0"/>
+                              <Component id="timeFinalLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="timeFinalLabel2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="10" max="32767" attributes="0"/>
                       </Group>
@@ -3758,16 +3758,16 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace pref="10" max="32767" attributes="0"/>
-                          <Component id="jLabel111" min="-2" max="-2" attributes="0"/>
+                          <Component id="timeFinalLabel1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="10" max="32767" attributes="0"/>
-                          <Component id="jLabel112" min="-2" max="-2" attributes="0"/>
+                          <Component id="timeFinalLabel2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="10" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel111">
+                <Component class="javax.swing.JLabel" name="timeFinalLabel1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="18" style="1"/>
@@ -3775,7 +3775,7 @@
                     <Property name="text" type="java.lang.String" value="TIME"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel112">
+                <Component class="javax.swing.JLabel" name="timeFinalLabel2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="18" style="1"/>
