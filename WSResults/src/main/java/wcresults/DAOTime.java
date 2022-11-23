@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class DAOTime {
     public boolean exibirTabelaTime (Time time) throws Exception {
-        String sql = "SELECT * FROM time_table";
+        String sql = "SELECT * FROM time_table WHERE id = ?";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, time.getNome());
@@ -46,7 +46,7 @@ public class DAOTime {
     }
     
     public void atribuirTimesOficiais(Time time) throws Exception {
-        String sql = "UPDATE time_table SET nome = 'Qatar' AND grupo = 'A' WHERE id = 1 ";
+        String sql = "UPDATE time_table SET nome = 'Qatar' AND grupo = 1 WHERE id = 1";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, time.getNome());

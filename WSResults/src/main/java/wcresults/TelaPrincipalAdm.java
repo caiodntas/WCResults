@@ -42,10 +42,10 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        timeGrupoALabel1 = new javax.swing.JLabel();
+        timeGrupoALabel2 = new javax.swing.JLabel();
+        timeGrupoALabel3 = new javax.swing.JLabel();
+        timeGrupoALabel4 = new javax.swing.JLabel();
         jPanel18 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
@@ -105,11 +105,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel54 = new javax.swing.JPanel();
         jLabel93 = new javax.swing.JLabel();
         jPanel55 = new javax.swing.JPanel();
-        jLabel94 = new javax.swing.JLabel();
-        jLabel95 = new javax.swing.JLabel();
+        timesQuartasLabel1L = new javax.swing.JLabel();
+        timesQuartasLabel2L = new javax.swing.JLabel();
         jPanel56 = new javax.swing.JPanel();
-        jLabel96 = new javax.swing.JLabel();
-        jLabel97 = new javax.swing.JLabel();
+        timesQuartasLabel3L = new javax.swing.JLabel();
+        timesQuartasLabel4L = new javax.swing.JLabel();
         jPanel60 = new javax.swing.JPanel();
         jLabel103 = new javax.swing.JLabel();
         jPanel61 = new javax.swing.JPanel();
@@ -118,11 +118,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel57 = new javax.swing.JPanel();
         jLabel98 = new javax.swing.JLabel();
         jPanel58 = new javax.swing.JPanel();
-        jLabel99 = new javax.swing.JLabel();
-        jLabel100 = new javax.swing.JLabel();
+        timesQuartasLabel1R = new javax.swing.JLabel();
+        timesQuartasLabel2R = new javax.swing.JLabel();
         jPanel59 = new javax.swing.JPanel();
-        jLabel101 = new javax.swing.JLabel();
-        jLabel102 = new javax.swing.JLabel();
+        timesQuartasLabel3R = new javax.swing.JLabel();
+        timesQuartasLabel4R = new javax.swing.JLabel();
         jPanel46 = new javax.swing.JPanel();
         jLabel82 = new javax.swing.JLabel();
         jPanel48 = new javax.swing.JPanel();
@@ -302,17 +302,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel7.setMinimumSize(new java.awt.Dimension(56, 63));
         jPanel7.setPreferredSize(new java.awt.Dimension(56, 63));
 
-        jLabel7.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
-        jLabel7.setText("TIME");
+        timeGrupoALabel1.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
+        timeGrupoALabel1.setText("TIME");
 
-        jLabel8.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
-        jLabel8.setText("TIME");
+        timeGrupoALabel2.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
+        timeGrupoALabel2.setText("TIME");
 
-        jLabel9.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
-        jLabel9.setText("TIME");
+        timeGrupoALabel3.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
+        timeGrupoALabel3.setText("TIME");
 
-        jLabel10.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
-        jLabel10.setText("TIME");
+        timeGrupoALabel4.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
+        timeGrupoALabel4.setText("TIME");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -321,22 +321,22 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10))
+                    .addComponent(timeGrupoALabel1)
+                    .addComponent(timeGrupoALabel2)
+                    .addComponent(timeGrupoALabel3)
+                    .addComponent(timeGrupoALabel4))
                 .addContainerGap(19, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addComponent(jLabel7)
+                .addComponent(timeGrupoALabel1)
                 .addGap(0, 0, 0)
-                .addComponent(jLabel8)
+                .addComponent(timeGrupoALabel2)
                 .addGap(0, 0, 0)
-                .addComponent(jLabel9)
+                .addComponent(timeGrupoALabel3)
                 .addGap(0, 0, 0)
-                .addComponent(jLabel10)
+                .addComponent(timeGrupoALabel4)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -1025,11 +1025,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel55.setName(""); // NOI18N
         jPanel55.setPreferredSize(new java.awt.Dimension(75, 64));
 
-        jLabel94.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jLabel94.setText("TIME");
+        timesQuartasLabel1L.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        timesQuartasLabel1L.setText("TIME");
 
-        jLabel95.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jLabel95.setText("TIME");
+        timesQuartasLabel2L.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        timesQuartasLabel2L.setText("TIME");
 
         javax.swing.GroupLayout jPanel55Layout = new javax.swing.GroupLayout(jPanel55);
         jPanel55.setLayout(jPanel55Layout);
@@ -1038,17 +1038,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addGroup(jPanel55Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel94)
-                    .addComponent(jLabel95))
+                    .addComponent(timesQuartasLabel1L)
+                    .addComponent(timesQuartasLabel2L))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel55Layout.setVerticalGroup(
             jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel55Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel94)
+                .addComponent(timesQuartasLabel1L)
                 .addGap(0, 0, 0)
-                .addComponent(jLabel95)
+                .addComponent(timesQuartasLabel2L)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1058,11 +1058,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel56.setName(""); // NOI18N
         jPanel56.setPreferredSize(new java.awt.Dimension(75, 64));
 
-        jLabel96.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jLabel96.setText("TIME");
+        timesQuartasLabel3L.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        timesQuartasLabel3L.setText("TIME");
 
-        jLabel97.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jLabel97.setText("TIME");
+        timesQuartasLabel4L.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        timesQuartasLabel4L.setText("TIME");
 
         javax.swing.GroupLayout jPanel56Layout = new javax.swing.GroupLayout(jPanel56);
         jPanel56.setLayout(jPanel56Layout);
@@ -1071,17 +1071,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addGroup(jPanel56Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel96)
-                    .addComponent(jLabel97))
+                    .addComponent(timesQuartasLabel3L)
+                    .addComponent(timesQuartasLabel4L))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel56Layout.setVerticalGroup(
             jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel56Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel96)
+                .addComponent(timesQuartasLabel3L)
                 .addGap(0, 0, 0)
-                .addComponent(jLabel97)
+                .addComponent(timesQuartasLabel4L)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1181,11 +1181,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel58.setName(""); // NOI18N
         jPanel58.setPreferredSize(new java.awt.Dimension(75, 64));
 
-        jLabel99.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jLabel99.setText("TIME");
+        timesQuartasLabel1R.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        timesQuartasLabel1R.setText("TIME");
 
-        jLabel100.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jLabel100.setText("TIME");
+        timesQuartasLabel2R.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        timesQuartasLabel2R.setText("TIME");
 
         javax.swing.GroupLayout jPanel58Layout = new javax.swing.GroupLayout(jPanel58);
         jPanel58.setLayout(jPanel58Layout);
@@ -1194,17 +1194,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addGroup(jPanel58Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanel58Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel99)
-                    .addComponent(jLabel100))
+                    .addComponent(timesQuartasLabel1R)
+                    .addComponent(timesQuartasLabel2R))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel58Layout.setVerticalGroup(
             jPanel58Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel58Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel99)
+                .addComponent(timesQuartasLabel1R)
                 .addGap(0, 0, 0)
-                .addComponent(jLabel100)
+                .addComponent(timesQuartasLabel2R)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1214,11 +1214,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel59.setName(""); // NOI18N
         jPanel59.setPreferredSize(new java.awt.Dimension(75, 64));
 
-        jLabel101.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jLabel101.setText("TIME");
+        timesQuartasLabel3R.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        timesQuartasLabel3R.setText("TIME");
 
-        jLabel102.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jLabel102.setText("TIME");
+        timesQuartasLabel4R.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        timesQuartasLabel4R.setText("TIME");
 
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
         jPanel59.setLayout(jPanel59Layout);
@@ -1227,17 +1227,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addGroup(jPanel59Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel101)
-                    .addComponent(jLabel102))
+                    .addComponent(timesQuartasLabel3R)
+                    .addComponent(timesQuartasLabel4R))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel59Layout.setVerticalGroup(
             jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel59Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel101)
+                .addComponent(timesQuartasLabel3R)
                 .addGap(0, 0, 0)
-                .addComponent(jLabel102)
+                .addComponent(timesQuartasLabel4R)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -2371,10 +2371,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel100;
-    private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel106;
     private javax.swing.JLabel jLabel109;
@@ -2442,7 +2438,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
@@ -2453,7 +2448,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
@@ -2464,17 +2458,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
     private javax.swing.JLabel jLabel93;
-    private javax.swing.JLabel jLabel94;
-    private javax.swing.JLabel jLabel95;
-    private javax.swing.JLabel jLabel96;
-    private javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
-    private javax.swing.JLabel jLabel99;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -2547,18 +2535,32 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JLabel timeFinalLabel1;
     private javax.swing.JLabel timeFinalLabel2;
+    private javax.swing.JLabel timeGrupoALabel1;
+    private javax.swing.JLabel timeGrupoALabel2;
+    private javax.swing.JLabel timeGrupoALabel3;
+    private javax.swing.JLabel timeGrupoALabel4;
     private javax.swing.JLabel timeSemiFinalLabel1L;
     private javax.swing.JLabel timeSemiFinalLabel2L;
+    private javax.swing.JLabel timesQuartasLabel1L;
+    private javax.swing.JLabel timesQuartasLabel1R;
+    private javax.swing.JLabel timesQuartasLabel2L;
+    private javax.swing.JLabel timesQuartasLabel2R;
+    private javax.swing.JLabel timesQuartasLabel3L;
+    private javax.swing.JLabel timesQuartasLabel3R;
+    private javax.swing.JLabel timesQuartasLabel4L;
+    private javax.swing.JLabel timesQuartasLabel4R;
     private javax.swing.JLabel timesSemiFinalLabel1R;
     private javax.swing.JLabel timesSemiFinalLabel2R;
     // End of variables declaration//GEN-END:variables
+    
+    
     public static void carregaTimes() throws Exception {
-        DAOTime daot = new DAOTime();
+        /*DAOTime daot = new DAOTime();
         List times = (List) daot.buscarTimes();
         int timesGrupos[] = Grupo.sorteioTimes();
         int i = 0;
-        for (Time t : times){
-            t.setGrupo(timesGrupos[i++]);
-        }
+        for (int Time : timesGrupos){
+            Time.setGrupo(timesGrupos[i++]);
+        }*/
     }
-
+}

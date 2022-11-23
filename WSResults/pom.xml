@@ -5,11 +5,12 @@
     <artifactId>WCResults</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
-         <exec.mainClass>com.mycompany.wsresults.WCResults</exec.mainClass>
+         <exec.mainClass>com.mycompany.wcresults.WCResults</exec.mainClass>
     </properties>
 
     <dependencies>
@@ -19,5 +20,7 @@
             <version>8.0.31</version>
         </dependency>
     </dependencies>
+
     <name>WCResults</name>
+    
 </project>

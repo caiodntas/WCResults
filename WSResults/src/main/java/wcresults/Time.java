@@ -96,10 +96,5 @@ public class Time {
         String inserirGana = "INSERT INTO time_table (nome, grupo) VALUES ('Gana', 'H')";
         String inserirUruguai = "INSERT INTO time_table (nome, grupo) VALUES ('Uruguai', 'H')";
         String inserirRepublicaDaCoreia = "INSERT INTO time_table (nome, grupo) VALUES ('República da Coreia', 'H')";
-    
-        
-        
-    
-    }
-    */
+        }*/
 }
