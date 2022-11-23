@@ -38,13 +38,12 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         administradoresTable = new javax.swing.JTable();
         loginAdministradorTextField = new javax.swing.JTextField();
-        confSenhaPasswordField = new javax.swing.JPasswordField();
         senhaPasswordField = new javax.swing.JPasswordField();
+        senhaPasswordField1 = new javax.swing.JPasswordField();
         gerenciarTimesMenuBar = new javax.swing.JMenuBar();
         inicioMenu = new javax.swing.JMenu();
         gerenciarTimesMenu = new javax.swing.JMenu();
         gerenciarAdmsMenu = new javax.swing.JMenu();
-        loginMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("WC Results");
@@ -112,17 +111,21 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             }
         });
 
-        confSenhaPasswordField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        confSenhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Confirme a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
-        confSenhaPasswordField.setPreferredSize(new java.awt.Dimension(64, 39));
-        confSenhaPasswordField.setSelectionEnd(11);
-        confSenhaPasswordField.setSelectionStart(11);
-
         senhaPasswordField.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         senhaPasswordField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         senhaPasswordField.setPreferredSize(new java.awt.Dimension(64, 39));
         senhaPasswordField.setSelectionEnd(11);
         senhaPasswordField.setSelectionStart(11);
+
+        senhaPasswordField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        senhaPasswordField1.setToolTipText("");
+        senhaPasswordField1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Confirme a senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
+        senhaPasswordField1.setPreferredSize(new java.awt.Dimension(64, 39));
+        senhaPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                senhaPasswordField1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -134,36 +137,37 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(loginAdministradorTextField)
-                            .addComponent(confSenhaPasswordField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(senhaPasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel1))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(jLabel1)
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(68, 68, 68)
                         .addComponent(cadastrarAdministradorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(18, 18, 18)
+                        .addGap(0, 83, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(senhaPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(51, 51, 51)
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
                         .addComponent(loginAdministradorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(senhaPasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(confSenhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
+                        .addComponent(senhaPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(cadastrarAdministradorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(69, 69, 69)))
                 .addContainerGap(15, Short.MAX_VALUE))
@@ -190,6 +194,11 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         inicioMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         inicioMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         inicioMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        inicioMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                inicioMenuMouseClicked(evt);
+            }
+        });
         gerenciarTimesMenuBar.add(inicioMenu);
 
         gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
@@ -201,6 +210,11 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         gerenciarTimesMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gerenciarTimesMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gerenciarTimesMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarTimesMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                gerenciarTimesMenuMouseClicked(evt);
+            }
+        });
         gerenciarTimesMenuBar.add(gerenciarTimesMenu);
 
         gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
@@ -213,17 +227,6 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         gerenciarAdmsMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gerenciarAdmsMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
         gerenciarTimesMenuBar.add(gerenciarAdmsMenu);
-
-        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
-        loginMenu.setText("Login Administrador");
-        loginMenu.setAlignmentX(1.0F);
-        loginMenu.setAlignmentY(1.0F);
-        loginMenu.setAutoscrolls(true);
-        loginMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        loginMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        loginMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        loginMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
-        gerenciarTimesMenuBar.add(loginMenu);
 
         setJMenuBar(gerenciarTimesMenuBar);
 
@@ -269,6 +272,24 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_loginAdministradorTextFieldActionPerformed
 
+    private void senhaPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaPasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_senhaPasswordField1ActionPerformed
+
+    private void gerenciarTimesMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gerenciarTimesMenuMouseClicked
+        // IR PARA A TELA GERENCIAR TIMES
+        telaGerenciarTimes vs = new telaGerenciarTimes();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_gerenciarTimesMenuMouseClicked
+
+    private void inicioMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inicioMenuMouseClicked
+        // IR PARA A TELA PRINCIPAL ADM
+        TelaPrincipalAdm vs = new TelaPrincipalAdm();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_inicioMenuMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -308,7 +329,6 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable administradoresTable;
     private javax.swing.JButton cadastrarAdministradorButton;
-    private javax.swing.JPasswordField confSenhaPasswordField;
     private javax.swing.JMenu gerenciarAdmsMenu;
     private javax.swing.JMenu gerenciarTimesMenu;
     private javax.swing.JMenuBar gerenciarTimesMenuBar;
@@ -317,7 +337,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField loginAdministradorTextField;
-    private javax.swing.JMenu loginMenu;
     private javax.swing.JPasswordField senhaPasswordField;
+    private javax.swing.JPasswordField senhaPasswordField1;
     // End of variables declaration//GEN-END:variables
 }

@@ -48,7 +48,6 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         inicioMenu = new javax.swing.JMenu();
         gerenciarTimesMenu = new javax.swing.JMenu();
         gerenciarAdmsMenu = new javax.swing.JMenu();
-        loginMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("WC Results");
@@ -189,6 +188,11 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         inicioMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         inicioMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         inicioMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        inicioMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                inicioMenuMouseClicked(evt);
+            }
+        });
         inicioMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inicioMenuActionPerformed(evt);
@@ -221,28 +225,17 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         gerenciarAdmsMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gerenciarAdmsMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gerenciarAdmsMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarAdmsMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                gerenciarAdmsMenuMouseClicked(evt);
+            }
+        });
         gerenciarAdmsMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 gerenciarAdmsMenuActionPerformed(evt);
             }
         });
         gerenciarTimesMenuBar.add(gerenciarAdmsMenu);
-
-        loginMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
-        loginMenu.setText("Login Administrador");
-        loginMenu.setAlignmentX(1.0F);
-        loginMenu.setAlignmentY(1.0F);
-        loginMenu.setAutoscrolls(true);
-        loginMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        loginMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        loginMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        loginMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
-        loginMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginMenuActionPerformed(evt);
-            }
-        });
-        gerenciarTimesMenuBar.add(loginMenu);
 
         setJMenuBar(gerenciarTimesMenuBar);
 
@@ -293,11 +286,19 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_gerenciarAdmsMenuActionPerformed
 
-    private void loginMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginMenuActionPerformed
-        // TODO add your handling code here
-        new telaGerenciarAdministradores().setVisible(true);
-        dispose();
-    }//GEN-LAST:event_loginMenuActionPerformed
+    private void inicioMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inicioMenuMouseClicked
+        // IR PARA A TELA PRINCIPAL ADM
+        TelaPrincipalAdm vs = new TelaPrincipalAdm();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_inicioMenuMouseClicked
+
+    private void gerenciarAdmsMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gerenciarAdmsMenuMouseClicked
+        // IR PARA A TELA GERENCIAR ADMINISTRADORES
+        telaGerenciarAdministradores vs = new telaGerenciarAdministradores();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_gerenciarAdmsMenuMouseClicked
 
     /**
      * @param args the command line arguments
@@ -346,7 +347,6 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JMenu loginMenu;
     private javax.swing.JTable timesTable;
     private javax.swing.JTextField txtTime;
     // End of variables declaration//GEN-END:variables

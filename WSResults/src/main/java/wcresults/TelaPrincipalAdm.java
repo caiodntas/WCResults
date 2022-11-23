@@ -209,7 +209,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(780, 480));
@@ -2283,17 +2282,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenu3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jMenu3.setMargin(new java.awt.Insets(6, 6, 6, 6));
         jMenu3.setPreferredSize(new java.awt.Dimension(180, 19));
+        jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu3MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu3);
-
-        jMenu4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
-        jMenu4.setText("Login Administrador");
-        jMenu4.setAlignmentX(1.0F);
-        jMenu4.setAlignmentY(1.0F);
-        jMenu4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jMenu4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jMenu4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jMenu4.setMargin(new java.awt.Insets(6, 6, 6, 6));
-        jMenuBar1.add(jMenu4);
 
         setJMenuBar(jMenuBar1);
 
@@ -2338,6 +2332,13 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         vs.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jMenu2MouseClicked
+
+    private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
+        // IR PARA A TELA GERENCIAR ADMINISTRADORES
+        telaGerenciarAdministradores vs = new telaGerenciarAdministradores();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jMenu3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -2486,7 +2487,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
