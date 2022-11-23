@@ -205,9 +205,10 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
         jLabel112 = new javax.swing.JLabel();
         jLabel109 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(780, 480));
         setMinimumSize(new java.awt.Dimension(780, 480));
         setSize(new java.awt.Dimension(780, 480));
 
@@ -2234,7 +2235,21 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
         jMenuBar1.setMaximumSize(new java.awt.Dimension(378, 400));
         jMenuBar1.setMinimumSize(new java.awt.Dimension(378, 50));
         jMenuBar1.setName(""); // NOI18N
+        jMenuBar1.setOpaque(true);
         jMenuBar1.setPreferredSize(new java.awt.Dimension(600, 30));
+
+        jMenu1.setBackground(new java.awt.Color(204, 0, 0));
+        jMenu1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        jMenu1.setText("Início");
+        jMenu1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setBackground(new java.awt.Color(204, 0, 0));
+        jMenu2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        jMenu2.setText("Visualizar Times");
+        jMenu2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jMenuBar1.add(jMenu2);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2405,6 +2420,8 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
