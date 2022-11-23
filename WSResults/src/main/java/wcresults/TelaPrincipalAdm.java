@@ -2261,6 +2261,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenu2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jMenu2.setMargin(new java.awt.Insets(6, 6, 6, 6));
         jMenu2.setPreferredSize(new java.awt.Dimension(129, 19));
+        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu2MouseClicked(evt);
+            }
+        });
         jMenu2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenu2ActionPerformed(evt);
@@ -2326,6 +2331,13 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             telaAdm.setResizable(false);
         }
     }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
+        // IR PARA A TELA GERENCIAR TIMES
+        telaGerenciarTimes vs = new telaGerenciarTimes();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jMenu2MouseClicked
 
     /**
      * @param args the command line arguments

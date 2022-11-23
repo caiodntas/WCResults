@@ -122,6 +122,11 @@ public class telaVisualizarTimes extends javax.swing.JFrame {
         inicioMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         inicioMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         inicioMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        inicioMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                inicioMenuMouseClicked(evt);
+            }
+        });
         gerenciarTimesMenuBar.add(inicioMenu);
 
         gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
@@ -144,6 +149,11 @@ public class telaVisualizarTimes extends javax.swing.JFrame {
         loginMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         loginMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         loginMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        loginMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                loginMenuMouseClicked(evt);
+            }
+        });
         gerenciarTimesMenuBar.add(loginMenu);
 
         setJMenuBar(gerenciarTimesMenuBar);
@@ -161,6 +171,20 @@ public class telaVisualizarTimes extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void inicioMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inicioMenuMouseClicked
+        // VOLTAR PARA A TELA PRINCIPAL
+        TelaPrincipalUser vs = new TelaPrincipalUser();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_inicioMenuMouseClicked
+
+    private void loginMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMenuMouseClicked
+        // IR PARA A TELA DE LOGIN:
+        LoginTela vs = new LoginTela();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_loginMenuMouseClicked
 
     /**
      * @param args the command line arguments

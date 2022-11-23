@@ -207,6 +207,7 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         inicioMenu = new javax.swing.JMenu();
         visualizarTimesMenu = new javax.swing.JMenu();
+        visualizarTimesMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(780, 480));
@@ -2260,6 +2261,22 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
         });
         jMenuBar1.add(visualizarTimesMenu);
 
+        visualizarTimesMenu1.setBackground(new java.awt.Color(204, 0, 0));
+        visualizarTimesMenu1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        visualizarTimesMenu1.setText("Login Administrador");
+        visualizarTimesMenu1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        visualizarTimesMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                visualizarTimesMenu1MouseClicked(evt);
+            }
+        });
+        visualizarTimesMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                visualizarTimesMenu1ActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(visualizarTimesMenu1);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2283,14 +2300,26 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void visualizarTimesMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visualizarTimesMenuActionPerformed
-        telaVisualizarTimes vs = new telaVisualizarTimes();
-        vs.setVisible(true);
+        
     }//GEN-LAST:event_visualizarTimesMenuActionPerformed
 
     private void visualizarTimesMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_visualizarTimesMenuMouseClicked
+        // IR PARA A TELA DE VISUALIZAR TIMES
         telaVisualizarTimes vs = new telaVisualizarTimes();
         vs.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_visualizarTimesMenuMouseClicked
+
+    private void visualizarTimesMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_visualizarTimesMenu1MouseClicked
+        //IR PARA A TELA DE LOGIN:
+        LoginTela vs = new LoginTela();
+        vs.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_visualizarTimesMenu1MouseClicked
+
+    private void visualizarTimesMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visualizarTimesMenu1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_visualizarTimesMenu1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2508,5 +2537,6 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JMenu visualizarTimesMenu;
+    private javax.swing.JMenu visualizarTimesMenu1;
     // End of variables declaration//GEN-END:variables
 }
