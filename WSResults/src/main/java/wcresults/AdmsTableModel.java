@@ -10,7 +10,7 @@ import javax.swing.table.AbstractTableModel;
 public class AdmsTableModel extends AbstractTableModel {
 
     private List<Administrador> adms;
-    private String[] colunas = {"ID", "LOGIN ADMINISTRADOR", "SENHA"};
+    private String[] colunas = {"ID", "LOGIN", "SENHA"};
 
     public AdmsTableModel() throws Exception {
         DAOAdm dao = new DAOAdm();

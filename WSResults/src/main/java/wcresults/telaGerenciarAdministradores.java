@@ -26,7 +26,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
         }
         catch (Exception e) {
             e.printStackTrace();
-            JOptionPane.showMessageDialog(null, "Falha técnica. Tente novamente mais tarde.");
+            JOptionPane.showMessageDialog(null, "Falha ao buscar os administradores cadastrados.");
         }
     }
 
@@ -78,33 +78,12 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "ADMINISTRADORES CADASTRADOS", "SENHAS"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.Object.class, java.lang.Object.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, true
-            };
 
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
             }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
+        ));
         admsTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         admsTable.getTableHeader().setReorderingAllowed(false);
         jScrollPane2.setViewportView(admsTable);
-        if (admsTable.getColumnModel().getColumnCount() > 0) {
-            admsTable.getColumnModel().getColumn(0).setMinWidth(50);
-            admsTable.getColumnModel().getColumn(0).setMaxWidth(50);
-            admsTable.getColumnModel().getColumn(1).setMinWidth(200);
-            admsTable.getColumnModel().getColumn(1).setMaxWidth(200);
-        }
 
         loginAdministradorTextField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         loginAdministradorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Insira login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N

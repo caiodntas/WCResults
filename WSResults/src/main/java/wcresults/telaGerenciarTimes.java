@@ -23,7 +23,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         }
         catch (Exception e) {
             e.printStackTrace();
-            JOptionPane.showMessageDialog(null, "Falha técnica. Tente novamente mais tarde.");
+            JOptionPane.showMessageDialog(null, "Falha ao buscar os times cadastrados.");
         }
     }
 
