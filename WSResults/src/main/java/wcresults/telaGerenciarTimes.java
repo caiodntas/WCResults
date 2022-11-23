@@ -5,20 +5,26 @@
  */
 package wcresults;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 822161401
  */
 public class telaGerenciarTimes extends javax.swing.JFrame {
-
-    /**
-     * Creates new form gerenciarTimes
-     */
+          
     
     public telaGerenciarTimes() {
         super ("Tela Gerenciar Times");
         initComponents();
         setLocationRelativeTo(null);
+        try {
+           this.timesTable.setModel(new TimesTableModel());
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Falha técnica. Tente novamente mais tarde.");
+        }
     }
 
     /**
@@ -273,7 +279,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
 
     private void inicioMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicioMenuActionPerformed
         // Chamando a Tela Principal de Administrador
-        new telaPrincipalAdm().setVisible(true);
+        new TelaPrincipalAdm().setVisible(true);
         dispose();
     }//GEN-LAST:event_inicioMenuActionPerformed
 

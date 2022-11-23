@@ -1,26 +1,31 @@
 package wcresults;
 
 public class Time {
-    private int codigo;
+    private int id;
     private String nome;
     private Boolean oficial;
     private int grupo;
-    
+
     //construtor
-    public Time(int codigo, String nome, Boolean oficial, int grupo) {
-        this.codigo = codigo;
+    public Time(int id, String nome, Boolean oficial, int grupo) {
+        this.id = id;
         this.nome = nome;
         this.oficial = oficial;
         this.grupo = grupo;
     }
+
+    public Time(int id, String nome) {
+        this.id = id;
+        this.nome = nome;
+    }
     
     //getters and setters
-    public int getCodigo() {
-        return codigo;
+    public int getId() {
+        return id;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -47,7 +52,7 @@ public class Time {
         this.grupo = grupo;
     }
     
-    public void importarOficiais(){
+    /*public void importarOficiais(){
         //LIMPAR TABELA DE TIMES PARA RECEBER NOVOS
         String cleanTable = "DELETE * FROM time_table";
         
@@ -96,5 +101,5 @@ public class Time {
         
     
     }
-    
+    */
 }

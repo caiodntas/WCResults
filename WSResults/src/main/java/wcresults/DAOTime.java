@@ -1,8 +1,10 @@
 package wcresults;
 
+import java.util.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 
 public class DAOTime {
@@ -27,8 +29,20 @@ public class DAOTime {
             }
     }
     
-    public List buscarTimes() throws Exception {
-         
+    public List <Time> buscarTimes() throws Exception {
+        String sql = "SELECT id, nome FROM time_table";
+        List <Time> times = new ArrayList<>();
+        try (Connection c = ConnectionFactory.obtemConexao();
+        PreparedStatement ps = c.prepareStatement(sql)){
+            try (ResultSet rs = ps.executeQuery()){
+                while (rs.next()){
+                    int id = rs.getInt("id");
+                    String nome = rs.getString("nome");
+                    times.add(new Time (id, nome));
+                }
+            } 
+        }
+        return times;
     }
     
     public void atribuirTimesOficiais(Time time) throws Exception {
