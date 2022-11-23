@@ -205,8 +205,8 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
         jLabel112 = new javax.swing.JLabel();
         jLabel109 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        inicioMenu = new javax.swing.JMenu();
+        visualizarTimesMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(780, 480));
@@ -2238,17 +2238,22 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
         jMenuBar1.setOpaque(true);
         jMenuBar1.setPreferredSize(new java.awt.Dimension(600, 30));
 
-        jMenu1.setBackground(new java.awt.Color(204, 0, 0));
-        jMenu1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
-        jMenu1.setText("Início");
-        jMenu1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jMenuBar1.add(jMenu1);
+        inicioMenu.setBackground(new java.awt.Color(204, 0, 0));
+        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        inicioMenu.setText("Início");
+        inicioMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jMenuBar1.add(inicioMenu);
 
-        jMenu2.setBackground(new java.awt.Color(204, 0, 0));
-        jMenu2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
-        jMenu2.setText("Visualizar Times");
-        jMenu2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jMenuBar1.add(jMenu2);
+        visualizarTimesMenu.setBackground(new java.awt.Color(204, 0, 0));
+        visualizarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        visualizarTimesMenu.setText("Visualizar Times");
+        visualizarTimesMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        visualizarTimesMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                visualizarTimesMenuActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(visualizarTimesMenu);
 
         setJMenuBar(jMenuBar1);
 
@@ -2271,6 +2276,12 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void visualizarTimesMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visualizarTimesMenuActionPerformed
+        this.setVisible(false);
+        telaVisualizarTimes vs = new telaVisualizarTimes();
+        vs.setVisible(true);
+    }//GEN-LAST:event_visualizarTimesMenuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2309,6 +2320,7 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu inicioMenu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
@@ -2420,8 +2432,6 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -2488,5 +2498,6 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JMenu visualizarTimesMenu;
     // End of variables declaration//GEN-END:variables
 }

@@ -5,6 +5,8 @@
  */
 package wcresults;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 822161401
@@ -16,9 +18,16 @@ public class telaVisualizarTimes extends javax.swing.JFrame {
      */
     
     public telaVisualizarTimes() {
-        super ("Tela Gerenciar Times");
+        super ("Tela Visualizar Times");
         initComponents();
         setLocationRelativeTo(null);
+        try {
+           this.timesTable.setModel(new TimesTableModel());
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Falha técnica. Tente novamente mais tarde.");
+        }
     }
 
     /**
