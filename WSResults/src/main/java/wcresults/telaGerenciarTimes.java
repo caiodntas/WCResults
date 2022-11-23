@@ -5,8 +5,7 @@
  */
 package wcresults;
 
-import java.util.List;
-import javax.swing.table.AbstractTableModel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -19,6 +18,13 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         super ("Tela Gerenciar Times");
         initComponents();
         setLocationRelativeTo(null);
+        try {
+           this.timesTable.setModel(new TimesTableModel());
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Falha técnica. Tente novamente mais tarde.");
+        }
     }
 
     /**
