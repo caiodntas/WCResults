@@ -3,14 +3,12 @@ package wcresults;
 public class Time {
     private int id;
     private String nome;
-    private Boolean oficial;
     private int grupo;
 
     //construtor
-    public Time(int id, String nome, Boolean oficial, int grupo) {
+    public Time(int id, String nome, int grupo) {
         this.id = id;
         this.nome = nome;
-        this.oficial = oficial;
         this.grupo = grupo;
     }
 
@@ -36,14 +34,6 @@ public class Time {
         this.nome = nome;
     }
 
-    public Boolean getOficial() {
-        return oficial;
-    }
-
-    public void setOficial(Boolean oficial) {
-        this.oficial = oficial;
-    }
-    
     public int getGrupo() {
         return grupo;
     }
