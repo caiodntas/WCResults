@@ -2248,6 +2248,11 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
         visualizarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
         visualizarTimesMenu.setText("Visualizar Times");
         visualizarTimesMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        visualizarTimesMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                visualizarTimesMenuMouseClicked(evt);
+            }
+        });
         visualizarTimesMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 visualizarTimesMenuActionPerformed(evt);
@@ -2281,6 +2286,11 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
         telaVisualizarTimes vs = new telaVisualizarTimes();
         vs.setVisible(true);
     }//GEN-LAST:event_visualizarTimesMenuActionPerformed
+
+    private void visualizarTimesMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_visualizarTimesMenuMouseClicked
+        telaVisualizarTimes vs = new telaVisualizarTimes();
+        vs.setVisible(true);
+    }//GEN-LAST:event_visualizarTimesMenuMouseClicked
 
     /**
      * @param args the command line arguments
