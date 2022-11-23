@@ -5,7 +5,7 @@ public class Time {
     private String nome;
     private Boolean oficial;
     private int grupo;
-    
+
     //construtor
     public Time(int id, String nome, Boolean oficial, int grupo) {
         this.id = id;
@@ -52,7 +52,7 @@ public class Time {
         this.grupo = grupo;
     }
     
-    public void importarOficiais(){
+    /*public void importarOficiais(){
         //LIMPAR TABELA DE TIMES PARA RECEBER NOVOS
         String cleanTable = "DELETE * FROM time_table";
         
@@ -101,5 +101,5 @@ public class Time {
         
     
     }
-    
+    */
 }

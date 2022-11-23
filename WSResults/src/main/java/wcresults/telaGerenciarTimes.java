@@ -5,7 +5,7 @@
  */
 package wcresults;
 
-import java.awt.List;
+import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
@@ -13,37 +13,7 @@ import javax.swing.table.AbstractTableModel;
  * @author 822161401
  */
 public class telaGerenciarTimes extends javax.swing.JFrame {
-    
-    private List <Time> times;
-        private String [] colunas = {"ID", "NOME"};
-        
-        public telaGerenciarTimes (Time time) throws Exception {
-            DAOTime daot = new DAOTime();
-            this.times = daot.buscarTimes(time);
-        }
-        
-        public int getRowCount(){
-            return times.size();
-        }
-        
-        public int getColumnCount(){
-            return 2;
-        }
-        
-        public Object getValueAt(int rowIndex, int columnIndex) {
-            switch (columnIndex) {
-                case 0:
-                    return this.times.get(rowIndex).getId();
-                case 1:
-                    return this.times.get(rowIndex).getNome();
-                default:
-                    return null;
-            }
-        }
-        
-        public String getColumnName(int column) {
-            return this.colunas[column];
-        }
+          
     
     public telaGerenciarTimes() {
         super ("Tela Gerenciar Times");
@@ -375,8 +345,3 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
     private javax.swing.JTextField txtTime;
     // End of variables declaration//GEN-END:variables
 }
-
-    public class Time extends AbstractTableModel{
-        
-
-    }

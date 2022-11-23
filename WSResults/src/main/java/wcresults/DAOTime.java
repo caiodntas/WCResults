@@ -1,6 +1,6 @@
 package wcresults;
 
-import java.awt.List;
+import java.util.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -29,16 +29,15 @@ public class DAOTime {
             }
     }
     
-    public List <Time> buscarTimes(Time time) throws Exception {
-        String sql = "SELECT id, nome FROM time_table WHERE id = ?";
+    public List <Time> buscarTimes() throws Exception {
+        String sql = "SELECT id, nome FROM time_table";
         List <Time> times = new ArrayList<>();
         try (Connection c = ConnectionFactory.obtemConexao();
         PreparedStatement ps = c.prepareStatement(sql)){
-        ps.setInt (1, time.getId());
             try (ResultSet rs = ps.executeQuery()){
                 while (rs.next()){
-                    int id = rs.getInt("ID");
-                    String nome = rs.getString("NOME DO TIME");
+                    int id = rs.getInt("id");
+                    String nome = rs.getString("nome");
                     times.add(new Time (id, nome));
                 }
             } 
