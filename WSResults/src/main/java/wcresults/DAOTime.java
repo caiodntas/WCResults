@@ -41,10 +41,6 @@ public class DAOTime {
         }
     }
     
-   public void buscarIdENome () throws Exception {
-       
-   }
-    
     public void atualizarTime(Time time) throws Exception {
         String sql = "UPDATE time_table SET nome = ? WHERE nome = ?";
         try (Connection c = ConnectionFactory.obtemConexao();
