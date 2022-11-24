@@ -2362,7 +2362,9 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         DAOTime daot = new DAOTime();
         List times = (List) daot.buscarTimes();
         
-        timeGrupoALabel1.setText(times.getStrin);
+        for(int i = 0; i < 32; i++)  {
+            timeGrupoALabel1.setText(times.get(id, nome));
+        }
     }//GEN-LAST:event_formWindowGainedFocus
 
     /**
