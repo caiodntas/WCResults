@@ -2390,7 +2390,8 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             Logger.getLogger(TelaPrincipalAdm.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        
+
+
     }//GEN-LAST:event_formWindowGainedFocus
 
     /**
@@ -2619,6 +2620,8 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     public void carregaTimes() throws Exception {
         DAOTime daot = new DAOTime();
         List times = (List) daot.buscarTimes();
+        
+        timeGrupoALabel1.setText("Olá");
         int timesGrupos[] = Grupo.sorteioTimes();
         int i = 0;
         for (i = 0; i < 32; i++){
@@ -2640,7 +2643,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         DAOTime daot = new DAOTime();
         
         while (daot.buscarTimeID(time)){
-            timeGrupoALabel1.setText(time.getNome())
+            timeGrupoALabel1.setText(time.getNome());
         }
     }
 }

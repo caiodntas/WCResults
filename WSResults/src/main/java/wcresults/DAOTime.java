@@ -59,7 +59,7 @@ public class DAOTime {
     
     public List <Time> buscarTimes() throws Exception {
         String sql = "SELECT id, nome FROM time_table";
-        List <Time> times = new ArrayList<>();
+        ArrayList <Time> times = new ArrayList<>();
         try (Connection c = ConnectionFactory.obtemConexao();
         PreparedStatement ps = c.prepareStatement(sql)){
             try (ResultSet rs = ps.executeQuery()){
