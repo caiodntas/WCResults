@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Grupo {
     
-    /*public static int[] sorteioTimes() {
+    public static int[] sorteioTimes() {
     
         int[] times = new int[32];
         Random r = new Random();
@@ -63,6 +63,6 @@ public class Grupo {
         }
     }
     return times;
-}*/    
+}    
 
 }

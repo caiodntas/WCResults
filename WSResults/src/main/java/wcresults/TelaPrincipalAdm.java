@@ -214,6 +214,13 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(780, 480));
         setSize(new java.awt.Dimension(780, 480));
+        addWindowFocusListener(new java.awt.event.WindowFocusListener() {
+            public void windowGainedFocus(java.awt.event.WindowEvent evt) {
+                formWindowGainedFocus(evt);
+            }
+            public void windowLostFocus(java.awt.event.WindowEvent evt) {
+            }
+        });
 
         jPanel53.setMaximumSize(new java.awt.Dimension(730, 400));
         jPanel53.setMinimumSize(new java.awt.Dimension(730, 400));
@@ -2350,6 +2357,14 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
+        // TODO add your handling code here:
+        DAOTime daot = new DAOTime();
+        List times = (List) daot.buscarTimes();
+        
+        timeGrupoALabel1.setText(times.getStrin);
+    }//GEN-LAST:event_formWindowGainedFocus
+
     /**
      * @param args the command line arguments
      */
@@ -2572,14 +2587,21 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel timesSemiFinalLabel2R;
     // End of variables declaration//GEN-END:variables
     
-    
-    public static void carregaTimes() throws Exception {
+    public void carregaTimes() throws Exception {
         DAOTime daot = new DAOTime();
         List times = (List) daot.buscarTimes();
+        
+        timeGrupoALabel1.setText("Olá");
         int timesGrupos[] = Grupo.sorteioTimes();
         int i = 0;
-        for (int Time : timesGrupos){
-            Time.setGrupo(timesGrupos[i++]);
+        for (i = 0; i < 32; i++){
+            timeGrupoALabel1.getText();
         }
     }
+    
+    public void carregaTimes1() throws Exception {
+        DAOTime daot = new DAOTime();
+        List times = (List) daot.buscarTimeID(time);
+        timeGrupoALabel1.setText();
+    }    
 }
