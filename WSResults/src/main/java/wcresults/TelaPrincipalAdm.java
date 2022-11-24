@@ -2572,14 +2572,19 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel timesSemiFinalLabel2R;
     // End of variables declaration//GEN-END:variables
     
-    
-    public static void carregaTimes() throws Exception {
+    public void carregaTimes() throws Exception {
         DAOTime daot = new DAOTime();
         List times = (List) daot.buscarTimes();
         int timesGrupos[] = Grupo.sorteioTimes();
         int i = 0;
-        for (int Time : timesGrupos){
-            Time.setGrupo(timesGrupos[i++]);
+        for (i = 0; i < 32; i++){
+            timeGrupoALabel1.getText();
         }
     }
+    
+    public void carregaTimes1() throws Exception {
+        DAOTime daot = new DAOTime();
+        List times = (List) daot.buscarTimeID(time);
+        timeGrupoALabel1.setText();
+    }    
 }

@@ -8,7 +8,29 @@ import java.util.ArrayList;
 
 
 public class DAOTime {
-    public boolean exibirTabelaTime (Time time) throws Exception {
+    public boolean exibirTime (Time time) throws Exception {
+        String sql = "SELECT * FROM time_table WHERE id = ?";
+        try (Connection c = ConnectionFactory.obtemConexao();
+            PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, time.getNome());
+            try (ResultSet rs = ps.executeQuery()) {
+                return rs.next();
+            }
+        }
+    }
+    
+    public boolean buscarTimeID (Time time) throws Exception {
+        String sql = "SELECT * FROM time_table WHERE id = '" + time.getId() + "'" ;
+        try (Connection c = ConnectionFactory.obtemConexao();
+            PreparedStatement ps = c.prepareStatement(sql)) {
+            try (ResultSet rs = ps.executeQuery()) {
+                return rs.next();
+            }
+        }
+    }
+    
+    
+    public boolean exibirGrupo (Time time) throws Exception {
         String sql = "SELECT * FROM time_table WHERE id = ?";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
