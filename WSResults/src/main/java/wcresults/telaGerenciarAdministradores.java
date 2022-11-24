@@ -241,6 +241,12 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             if (dao.existeAdm(adm)) {
                 JOptionPane.showMessageDialog(null, "Administrador já existente");
             }
+            else if ("".equals(login)) {
+                JOptionPane.showMessageDialog(null, "Preencha o login");
+            }
+            else if ("".equals(senha)) {
+                JOptionPane.showMessageDialog(null, "Preencha os campos de senha corretamente");
+            }
             else if (!senha.equals(confSenha)) {
                 JOptionPane.showMessageDialog(null, "Senhas não coincidem");
             }
