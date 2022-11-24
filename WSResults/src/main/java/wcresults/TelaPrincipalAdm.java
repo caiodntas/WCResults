@@ -2555,12 +2555,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     
     
     public static void carregaTimes() throws Exception {
-        /*DAOTime daot = new DAOTime();
+        DAOTime daot = new DAOTime();
         List times = (List) daot.buscarTimes();
         int timesGrupos[] = Grupo.sorteioTimes();
         int i = 0;
         for (int Time : timesGrupos){
             Time.setGrupo(timesGrupos[i++]);
-        }*/
+        }
     }
 }
