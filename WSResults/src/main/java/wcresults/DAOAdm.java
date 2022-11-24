@@ -59,7 +59,7 @@ public class DAOAdm {
     }
     
     public List <Administrador> buscarAdms() throws Exception {
-        String sql = "SELECT id, nome, senha FROM adm_table";
+        String sql = "SELECT id, login, senha FROM adm_table";
         List <Administrador> adms = new ArrayList<>();
         try ( Connection c = ConnectionFactory.obtemConexao();
         PreparedStatement ps = c.prepareStatement(sql)) {

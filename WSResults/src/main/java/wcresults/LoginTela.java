@@ -161,7 +161,7 @@ public class LoginTela extends javax.swing.JFrame {
                 this.dispose();
             }
             else {
-                JOptionPane.showMessageDialog(null, "Oh-Oh");
+                JOptionPane.showMessageDialog(null, "Usuário não encontrado");
             }
         }
         catch (Exception e) {
