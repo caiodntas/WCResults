@@ -4,6 +4,7 @@ import java.util.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.RowId;
 import java.util.ArrayList;
 
 
@@ -19,17 +20,22 @@ public class DAOTime {
         }
     }
     
-    public boolean buscarTimeID (Time time) throws Exception {
-        String sql = "SELECT * FROM time_table WHERE id = '" + time.getId() + "'" ;
+    public void buscarTimeID (Time time) throws Exception {
+        String sql = "SELECT * FROM time_table WHERE id = '?'" ;
         try (Connection c = ConnectionFactory.obtemConexao();
-            PreparedStatement ps = c.prepareStatement(sql)) {
-            try (ResultSet rs = ps.executeQuery()) {
-                return rs.next();
+            PreparedStatement ps = c.prepareStatement(sql)){
+            ps.setInt(1, time.getId());
+            ResultSet rs = ps.executeQuery();
+            
+            String exp = rs.getString("nome");
+            RowId exp2 = rs.getRowId(2);
+            
+            while (rs.next()){
+                time.setNome( rs.getString("nome"));
             }
         }
     }
-    
-    
+
     public boolean exibirGrupo (Time time) throws Exception {
         String sql = "SELECT * FROM time_table WHERE id = ?";
         try (Connection c = ConnectionFactory.obtemConexao();

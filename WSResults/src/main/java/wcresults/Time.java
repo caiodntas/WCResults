@@ -17,6 +17,13 @@ public class Time {
         this.nome = nome;
     }
     
+    public Time(int id) {
+        this.id = id;
+    }
+    public Time() {
+
+    }
+    
     //getters and setters
     public int getId() {
         return id;
