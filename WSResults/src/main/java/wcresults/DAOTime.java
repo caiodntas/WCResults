@@ -4,7 +4,9 @@ import java.util.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 
 public class DAOTime {
@@ -71,14 +73,18 @@ public class DAOTime {
         }
     }
     
-    public void atualizarTime(Time time) throws Exception {
-        String sql = "UPDATE time_table SET nome = ? WHERE nome = ?";
+    public void alterarTime(Time time) {
+        String sql = "UPDATE time_table SET nome = ? WHERE id = ?";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, time.getNome());
+            ps.setInt(2, time.getId());
             ps.execute();
             ps.close();
             }
+        catch (SQLException erro) {
+            JOptionPane.showMessageDialog(null, "Falha ao alterar funcionario" + erro);
+        }
     }
     
     public List <Time> buscarTimes() throws Exception {
@@ -122,6 +128,7 @@ public class DAOTime {
             ps.close();
             }
     }
+    
 }    
 
 
