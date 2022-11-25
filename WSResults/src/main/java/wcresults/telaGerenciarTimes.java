@@ -332,7 +332,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new telaGerenciarTimes().setVisible(true);
+            new telaGerenciarTimes().setVisible(true);
             }
         });
     }
