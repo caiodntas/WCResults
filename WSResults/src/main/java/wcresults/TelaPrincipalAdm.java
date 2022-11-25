@@ -2388,12 +2388,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
         Time time = new Time();
         DAOTime daot = new DAOTime();
-
-        try {
-            timeGrupoALabel1.setText("");
-        } catch (Exception ex) {
-            Logger.getLogger(TelaPrincipalAdm.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        daot.buscarTimes(time);
     }//GEN-LAST:event_formWindowGainedFocus
 
     /**

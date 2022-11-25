@@ -18,6 +18,8 @@ public class DAOAdm {
             }
         }
     }
+    
+    
     public void cadastrarAdm(Administrador administrador) throws Exception {
         String sql = "INSERT INTO adm_table(login, senha) VALUES(?,?)";
         try (Connection c = ConnectionFactory.obtemConexao();

@@ -187,7 +187,7 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="idTimeComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtTime" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="txtTime" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Component id="cadastrarTimeButton" min="-2" pref="41" max="-2" attributes="0"/>

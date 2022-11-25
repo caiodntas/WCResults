@@ -81,7 +81,7 @@ public class DAOTime {
             }
     }
     
-    public List <Time> buscarTimes() throws Exception {
+    public List <Time> buscarTimes(Time times1) throws Exception {
         String sql = "SELECT id, nome FROM time_table";
         ArrayList <Time> times = new ArrayList<>();
         try (Connection c = ConnectionFactory.obtemConexao();
