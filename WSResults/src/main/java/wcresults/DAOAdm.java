@@ -44,14 +44,15 @@ public class DAOAdm {
     }
     
     public void excluirAdm(Administrador administrador) throws Exception {
-        String sql = "DELETE FROM adm_table WHERE login = ?";
+        String sql = "DELETE FROM adm_table WHERE id = ?";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
-            ps.setString(1, administrador.getLogin());
+            ps.setInt(1, administrador.getId());
             ps.execute();
             ps.close();
         }
-    }    
+    }
+    
     public void atualizarLoginAdm(Administrador administrador) throws Exception {
         String sql = "UPDATE adm_table SET login = ? WHERE login = ?";
         try (Connection c = ConnectionFactory.obtemConexao();

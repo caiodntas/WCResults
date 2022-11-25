@@ -30,7 +30,7 @@ public class Administrador {
         return id;
     }
 
-    public void setLogin(int id) {
+    public void setId(int id) {
         this.id = id;
     }
     
