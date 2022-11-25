@@ -251,7 +251,13 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
 
     private void importarOficiaisButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_importarOficiaisButtonActionPerformed
         //SUBSTITUIR COM OS 32 TIMES OFICIAS DA COPA A TABELA DE TIMES
-
+        try {
+            ImportarOficiais();
+            JOptionPane.showMessageDialog(null, "Times oficiais importados");
+            this.timesTable.setModel(new TimesTableModel());
+        } catch (Exception ex) {
+            Logger.getLogger(telaGerenciarTimes.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_importarOficiaisButtonActionPerformed
 
     private void alterarTimeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarTimeButtonActionPerformed
@@ -375,4 +381,16 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         DAOTime daot = new DAOTime();
         daot.alterarTime(time);
     }
+    
+    public void ImportarOficiais() {
+                
+        Time time = new Time();
+        time.setId(1);
+        time.setNome("QTAR");
+        time.setGrupo(1);
+        
+        DAOTime daot = new DAOTime();
+        daot.atribuirOficiais(time);
+    }
+    
 }

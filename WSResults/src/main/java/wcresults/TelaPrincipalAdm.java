@@ -2388,11 +2388,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
-        try {
+        /*try {
             carregaTimes1();
         } catch (Exception ex) {
             Logger.getLogger(TelaPrincipalAdm.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }*/
 
     }//GEN-LAST:event_formWindowGainedFocus
 
@@ -2631,13 +2631,13 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         }
     }*/
     
-    public void carregaTimes1() throws Exception {
+   /* public void carregaTimes1() throws Exception {
         DAOTime daot = new DAOTime();
         List timesNomes = (List) daot.buscarTimesLista();
         
         jTextField1.setText(timesNomes.getItem(1));
         JOptionPane.showMessageDialog(null, timesNomes.getItem(1));
-        }
+        }*/
 
     
     /*

@@ -119,11 +119,12 @@ public class DAOTime {
     }
     
     public void atribuirOficiais(Time time) {
-        String sql = "UPDATE time_table SET nome = QTAR, grupo = A WHERE id = 1; UPDATE time_table SET nome = QTAR, grupo = A WHERE id = 1";
+        String sql = "UPDATE time_table SET nome = ? AND grupo = ? WHERE id = ?";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, time.getNome());
-            ps.setInt(2, time.getId());
+            ps.setInt (2, time.getGrupo());
+            ps.setInt(3, time.getId());
             ps.execute();
             ps.close();
             }
