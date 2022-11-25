@@ -7,6 +7,7 @@ package wcresults;
 import java.awt.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -2205,10 +2206,10 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel53Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(5, 5, 5)
                         .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2218,7 +2219,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                                 .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(jPanel53Layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
+                        .addGap(126, 126, 126)
                         .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)))
                 .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2234,7 +2235,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         );
         jPanel53Layout.setVerticalGroup(
             jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel53Layout.createSequentialGroup()
+            .addGroup(jPanel53Layout.createSequentialGroup()
                 .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -2246,9 +2247,9 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                         .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel53Layout.createSequentialGroup()
-                            .addGap(40, 40, 40)
+                            .addGap(88, 88, 88)
                             .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -2256,7 +2257,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                                 .addComponent(jPanel60, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton1))
-                        .addGroup(jPanel53Layout.createSequentialGroup()
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel53Layout.createSequentialGroup()
                             .addGap(48, 48, 48)
                             .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2386,9 +2387,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
-        Time time = new Time();
-        DAOTime daot = new DAOTime();
-        daot.buscarTimes(time);
+        try {
+            carregaTimes1();
+        } catch (Exception ex) {
+            Logger.getLogger(TelaPrincipalAdm.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }//GEN-LAST:event_formWindowGainedFocus
 
     /**
@@ -2614,7 +2618,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel timesSemiFinalLabel2R;
     // End of variables declaration//GEN-END:variables
     
-    public void carregaTimes() throws Exception {
+    /*public void carregaTimes() throws Exception {
         DAOTime daot = new DAOTime();
         List times = (List) daot.buscarTimes();
         
@@ -2624,23 +2628,23 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         for (i = 0; i < 32; i++){
             timeGrupoALabel1.getText();
         }
-    }
+    }*/
     
     public void carregaTimes1() throws Exception {
-        Time time = new Time();
         DAOTime daot = new DAOTime();
-        daot.buscarTimeID(time);
+        List timesNomes = (List) daot.buscarTimesLista();
         
-        timeGrupoALabel1.setText(time.getNome());
+        jTextField1.setText(timesNomes.getItem(1));
+        JOptionPane.showMessageDialog(null, timesNomes.getItem(1));
         }
 
     
-
+    /*
     public void carregaTimes2() throws Exception {
         DAOTime daot = new DAOTime();
         
         while (daot.buscarTimeID(time)){
             timeGrupoALabel1.setText(time.getNome());
         }
-    }
+    }*/
 }

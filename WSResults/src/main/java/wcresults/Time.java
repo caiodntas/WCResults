@@ -17,6 +17,10 @@ public class Time {
         this.nome = nome;
     }
     
+    public Time(String nome) {
+        this.nome = nome;
+    }
+    
     public Time(int id) {
         this.id = id;
     }

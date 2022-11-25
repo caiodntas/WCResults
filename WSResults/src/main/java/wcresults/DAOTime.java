@@ -81,7 +81,7 @@ public class DAOTime {
             }
     }
     
-    public List <Time> buscarTimes(Time times1) throws Exception {
+    public List <Time> buscarTimes() throws Exception {
         String sql = "SELECT id, nome FROM time_table";
         ArrayList <Time> times = new ArrayList<>();
         try (Connection c = ConnectionFactory.obtemConexao();
@@ -95,6 +95,21 @@ public class DAOTime {
             } 
         }
         return times;
+    }
+    
+    public List <Time> buscarTimesLista() throws Exception {
+        String sql = "SELECT nome FROM time_table";
+        ArrayList <Time> timesNomes = new ArrayList<>();
+        try (Connection c = ConnectionFactory.obtemConexao();
+        PreparedStatement ps = c.prepareStatement(sql)){
+            try (ResultSet rs = ps.executeQuery()){
+                while (rs.next()){
+                    String nome = rs.getString("nome");
+                    timesNomes.add(new Time (nome));
+                }
+            } 
+        }
+        return timesNomes;
     }
     
     public void atribuirTimesOficiais(Time time) throws Exception {
