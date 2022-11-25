@@ -3,6 +3,7 @@ package wcresults;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +30,17 @@ public class DAOAdm {
             ps.execute();
             ps.close();
             }
+    }
+    
+    public boolean existeAdm1 (Administrador administrador) throws Exception {
+        String sql = "SELECT * FROM adm_table WHERE login = ?";
+        try (Connection c = ConnectionFactory.obtemConexao();
+            PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, administrador.getLogin());
+            try (ResultSet rs = ps.executeQuery()) {
+                return rs.next();
+            }
+        }
     }
     
     public void excluirAdm(Administrador administrador) throws Exception {
@@ -77,6 +89,27 @@ public class DAOAdm {
         return adms;
     }
     
+    public Administrador[] obterAdministradores() throws SQLException {
+        String sql = "SELECT id FROM adm_table";
+        try (Connection c = ConnectionFactory.obtemConexao();
+        PreparedStatement ps = c.prepareStatement(sql,
+        ResultSet.TYPE_SCROLL_INSENSITIVE,
+        ResultSet.CONCUR_READ_ONLY);
+        ResultSet rs = ps.executeQuery()){
+            int totalDeAdms = rs.last()? rs.getRow() : 0;
+            Administrador [] adms = new Administrador [totalDeAdms];
+            rs.beforeFirst();
+            int contador = 0;
+            
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                adms[contador++] = new Administrador (id); 
+                
+            } return adms;
+        }
+    }
+    
 }    
+
 
 

@@ -17,6 +17,14 @@ public class Administrador {
         this.senha = senha;
     }
     
+    public Administrador(String login) { 
+        this.login = login;
+    }
+    
+    public Administrador(int id) { 
+        this.id = id;
+    }
+        
     //metodos de acesso (getters) e métodos modificadores (setters)
     public int getId() {
         return id;
