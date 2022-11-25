@@ -4,7 +4,6 @@ import java.util.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.RowId;
 import java.util.ArrayList;
 
 
@@ -20,19 +19,25 @@ public class DAOTime {
         }
     }
     
-    public void buscarTimeID (Time time) throws Exception {
-        String sql = "SELECT * FROM time_table WHERE id = '?'" ;
-        try (Connection c = ConnectionFactory.obtemConexao();
-            PreparedStatement ps = c.prepareStatement(sql)){
+    public String buscarTimeID(Time time) throws Exception {
+        String sql = "SELECT nome FROM time_table WHERE id = ?";
+        try ( Connection c = ConnectionFactory.obtemConexao();
+            PreparedStatement ps = c.prepareStatement(sql)) {
+            String nome = "";
             ps.setInt(1, time.getId());
             ResultSet rs = ps.executeQuery();
             
-            String exp = rs.getString("nome");
+            if (rs.next()) {
+                nome = (rs.getString(2));
+            }
+            return nome;
+
+            /*String exp = rs.getString("nome");
             RowId exp2 = rs.getRowId(2);
             
             while (rs.next()){
                 time.setNome( rs.getString("nome"));
-            }
+            }*/
         }
     }
 
@@ -44,6 +49,25 @@ public class DAOTime {
             try (ResultSet rs = ps.executeQuery()) {
                 return rs.next();
             }
+        }
+    }
+    
+    public Time[] obterTimes() throws Exception {
+        String sql = "SELECT * FROM time_table";
+        try (Connection c = ConnectionFactory.obtemConexao();
+            PreparedStatement ps = c.prepareStatement(sql,
+            ResultSet.TYPE_SCROLL_INSENSITIVE,
+            ResultSet.CONCUR_READ_ONLY);
+            ResultSet rs = ps.executeQuery()) {
+            int totalDeTimes = rs.last() ? rs.getRow() : 0;
+            Time[] times = new Time[totalDeTimes];
+            rs.beforeFirst();
+            int contador = 0;
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                times[contador++] = new Time(id);
+            }
+            return times;
         }
     }
     
@@ -74,7 +98,7 @@ public class DAOTime {
     }
     
     public void atribuirTimesOficiais(Time time) throws Exception {
-        String sql = "UPDATE time_table SET nome = 'Qatar' AND grupo = 1 WHERE id = 1";
+        String sql = "UPDATE time_table SET nome = ? AND grupo = ? WHERE id = ?";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, time.getNome());

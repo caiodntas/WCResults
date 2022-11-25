@@ -5,7 +5,6 @@
 package wcresults;
 
 import java.awt.List;
-import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -19,6 +18,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
      * Creates new form TelaPrincipalAdm
      */
     public TelaPrincipalAdm() {
+        super ("Tela principal - Visualizar Times");
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -1001,12 +1001,14 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addGroup(jPanel43Layout.createSequentialGroup()
                 .addGap(8, 8, 8)
                 .addGroup(jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel75)
                     .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel45, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel43Layout.createSequentialGroup()
+                .addComponent(jLabel75)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel43Layout.setVerticalGroup(
             jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2384,8 +2386,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         DAOTime daot = new DAOTime();
 
         try {
-            daot.buscarTimeID(time);
-            timeGrupoALabel1.setText(time.getNome());
+            timeGrupoALabel1.setText(nome);
         } catch (Exception ex) {
             Logger.getLogger(TelaPrincipalAdm.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2426,6 +2427,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new TelaPrincipalAdm().setVisible(true);
             }
@@ -2637,7 +2639,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         timeGrupoALabel1.setText(time.getNome());
         }
 
-    }
+    
 
     public void carregaTimes2() throws Exception {
         DAOTime daot = new DAOTime();

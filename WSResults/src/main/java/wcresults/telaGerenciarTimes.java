@@ -254,7 +254,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void idTimeComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idTimeComboBoxActionPerformed
-        // TODO add your handling code here:
+        //buscarTimes();
     }//GEN-LAST:event_idTimeComboBoxActionPerformed
 
     private void importarOficiaisButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_importarOficiaisButtonActionPerformed
@@ -263,7 +263,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
     }//GEN-LAST:event_importarOficiaisButtonActionPerformed
 
     private void cadastrarTimeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarTimeButtonActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_cadastrarTimeButtonActionPerformed
 
     private void txtTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTimeActionPerformed
@@ -283,7 +283,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
     private void gerenciarAdmsMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gerenciarAdmsMenuActionPerformed
         // Ir para a tela Gerenciar Administradores
         new telaGerenciarAdministradores().setVisible(true);
-        dispose();
+        this.dispose();
     }//GEN-LAST:event_gerenciarAdmsMenuActionPerformed
 
     private void inicioMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inicioMenuMouseClicked
@@ -330,6 +330,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new telaGerenciarTimes().setVisible(true);
             }
@@ -341,7 +342,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
     private javax.swing.JMenu gerenciarAdmsMenu;
     private javax.swing.JMenu gerenciarTimesMenu;
     private javax.swing.JMenuBar gerenciarTimesMenuBar;
-    private javax.swing.JComboBox<String> idTimeComboBox;
+    private javax.swing.JComboBox<Time> idTimeComboBox;
     private javax.swing.JButton importarOficiaisButton;
     private javax.swing.JMenu inicioMenu;
     private javax.swing.JLabel jLabel1;
@@ -350,4 +351,16 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
     private javax.swing.JTable timesTable;
     private javax.swing.JTextField txtTime;
     // End of variables declaration//GEN-END:variables
+
+    /*private void buscarTimes() {
+        try {
+            DAOTime dao = new DAOTime();
+            Time[] times = dao.obterTimes();
+            idTimeComboBox.setModel(new DefaultComboBoxModel<>(times));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Cursos indisponíveis, tente novamente mais tarde.");
+            e.printStackTrace();
+        }
+    }*/
+
 }

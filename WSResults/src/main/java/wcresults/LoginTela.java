@@ -19,6 +19,7 @@ public class LoginTela extends javax.swing.JFrame {
      * Creates new form LoginTella
      */
     public LoginTela() {
+        super ("Login");
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -156,8 +157,8 @@ public class LoginTela extends javax.swing.JFrame {
             Administrador adm = new Administrador(login, senha);
             DAOAdm dao = new DAOAdm();
             if (dao.existeAdm(adm)) {
-                telaGerenciarTimes db = new telaGerenciarTimes();
-                db.setVisible(true);
+                TelaPrincipalAdm tpa = new TelaPrincipalAdm();
+                tpa.setVisible(true);
                 this.dispose();
             }
             else {
@@ -165,6 +166,7 @@ public class LoginTela extends javax.swing.JFrame {
             }
         }
         catch (Exception e) {
+            JOptionPane.showMessageDialog (null, "Problemas técnicos. Tente novamente mais tarde");
             e.printStackTrace();
         }
     }//GEN-LAST:event_loginButtonActionPerformed
