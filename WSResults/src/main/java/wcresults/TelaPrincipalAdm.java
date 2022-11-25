@@ -2386,13 +2386,10 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         DAOTime daot = new DAOTime();
 
         try {
-            timeGrupoALabel1.setText(nome);
+            timeGrupoALabel1.setText("");
         } catch (Exception ex) {
             Logger.getLogger(TelaPrincipalAdm.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-
-
     }//GEN-LAST:event_formWindowGainedFocus
 
     /**
@@ -2422,8 +2419,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        
-        
+          
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
