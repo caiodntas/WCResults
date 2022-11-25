@@ -293,6 +293,7 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
             else {
                 dao.cadastrarAdm(adm);
                 JOptionPane.showMessageDialog(null, "Administrador cadastrado");
+                this.admsTable.setModel(new AdmsTableModel());
             }
         }
         catch (Exception e) {
@@ -323,15 +324,15 @@ public class telaGerenciarAdministradores extends javax.swing.JFrame {
     }//GEN-LAST:event_inicioMenuMouseClicked
 
     private void excluirAdministradorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirAdministradorButtonActionPerformed
+        DAOAdm dao = new DAOAdm();
         try {
             ExcluirAdm();
+            this.admsTable.setModel(new AdmsTableModel());
             JOptionPane.showMessageDialog (null, "Administrador excluído com sucesso.");
         } catch (Exception ex) {
             Logger.getLogger(telaGerenciarAdministradores.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog (null, "Erro.");
-        }
-        
-                  
+        }     
     }//GEN-LAST:event_excluirAdministradorButtonActionPerformed
 
     private void idTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idTextFieldActionPerformed
