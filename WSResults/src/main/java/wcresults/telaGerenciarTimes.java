@@ -121,7 +121,6 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
             timesTable.getColumnModel().getColumn(0).setMaxWidth(50);
         }
 
-        idTimeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         idTimeComboBox.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ID", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 10))); // NOI18N
         idTimeComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -342,7 +341,7 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
     private javax.swing.JMenu gerenciarAdmsMenu;
     private javax.swing.JMenu gerenciarTimesMenu;
     private javax.swing.JMenuBar gerenciarTimesMenuBar;
-    private javax.swing.JComboBox<Time> idTimeComboBox;
+    private javax.swing.JComboBox<String> idTimeComboBox;
     private javax.swing.JButton importarOficiaisButton;
     private javax.swing.JMenu inicioMenu;
     private javax.swing.JLabel jLabel1;
