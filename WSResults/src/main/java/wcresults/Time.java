@@ -53,6 +53,12 @@ public class Time {
         this.grupo = grupo;
     }
     
+    
+    @Override
+    public String toString() {
+        return this.nome;
+    }
+    
     /*public void importarOficiais(){
         //LIMPAR TABELA DE TIMES PARA RECEBER NOVOS
         String cleanTable = "DELETE * FROM time_table";

@@ -76,7 +76,7 @@ public class DAOTime {
             rs.beforeFirst();
             int contador = 0;
             while (rs.next()) {
-                int id = rs.getInt("id");
+                int id = rs.getInt("nome");
                 times[contador++] = new Time(id);
             }
             return times;
@@ -135,9 +135,9 @@ public class DAOTime {
                     ResultSet.CONCUR_UPDATABLE)) {
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
-            ps.close();
             Time time = new Time();
-            //Posicional     o ResultSet na primeria posição
+            
+            //Posicional o ResultSet na primeria posição
             rs.first();
             time.setId(id);
             time.setNome(rs.getString("nome"));
