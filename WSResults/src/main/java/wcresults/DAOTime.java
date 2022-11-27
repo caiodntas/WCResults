@@ -33,13 +33,6 @@ public class DAOTime {
                 nome = (rs.getString(2));
             }
             return nome;
-
-            /*String exp = rs.getString("nome");
-            RowId exp2 = rs.getRowId(2);
-            
-            while (rs.next()){
-                time.setNome( rs.getString("nome"));
-            }*/
         }
     }
 
@@ -52,6 +45,23 @@ public class DAOTime {
                 return rs.next();
             }
         }
+    }
+    
+    public List <Time> buscarTimesTela() throws Exception {
+        String sql = "SELECT * FROM time_table";
+        List <Time> times = new ArrayList<>();
+        try ( Connection c = ConnectionFactory.obtemConexao();
+        PreparedStatement ps = c.prepareStatement(sql)) {
+            try ( ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    int id = rs.getInt("id");
+                    String nome = rs.getString("nome");
+                    int grupo = rs.getInt("grupo");
+                    times.add(new Time (id, nome, grupo));
+                }
+            }
+        }
+        return times;
     }
     
     public Time[] obterTimes() throws Exception {
@@ -113,9 +123,26 @@ public class DAOTime {
                     String nome = rs.getString("nome");
                     timesNomes.add(new Time (nome));
                 }
-            } 
+            }
         }
         return timesNomes;
+    }
+    
+    public Time getTime(int id) throws SQLException {
+        String sql = "SELECT nome FROM time_table WHERE id = ?";
+        try (Connection c = ConnectionFactory.obtemConexao();
+            PreparedStatement ps = c.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE,
+                    ResultSet.CONCUR_UPDATABLE)) {
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            ps.close();
+            Time time = new Time();
+            //Posicional     o ResultSet na primeria posição
+            rs.first();
+            time.setId(id);
+            time.setNome(rs.getString("nome"));
+            return time;
+            }
     }
     
     public void atribuirOficiais(Time time) {

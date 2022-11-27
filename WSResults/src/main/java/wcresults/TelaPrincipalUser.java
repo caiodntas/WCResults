@@ -1579,6 +1579,7 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("SIMULAR CAMPEONATO");
+        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(2, 2, 2, 2));
         jButton1.setOpaque(true);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2595,4 +2596,6 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
     private javax.swing.JMenu loginMenu;
     private javax.swing.JMenu visualizarTimesMenu;
     // End of variables declaration//GEN-END:variables
+
+    
 }
