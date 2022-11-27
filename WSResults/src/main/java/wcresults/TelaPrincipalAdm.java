@@ -2670,7 +2670,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         }
         else {
            timeGrupoALabel1.setText(time.getNome()); 
-        }    
+        }
     }
-    
 }
