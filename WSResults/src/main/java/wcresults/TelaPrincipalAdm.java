@@ -4,6 +4,10 @@
  */
 package wcresults;
 
+import java.sql.SQLException;
+import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -37,8 +41,8 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel11 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        golsTime1 = new javax.swing.JLabel();
+        golsTime2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
@@ -238,7 +242,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel72 = new javax.swing.JLabel();
         jLabel109 = new javax.swing.JLabel();
         carregarTimesButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        simularCampeonatoButton = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -253,7 +257,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setExtendedState(6);
-        setMaximumSize(new java.awt.Dimension(1024, 728));
         setMinimumSize(new java.awt.Dimension(800, 600));
         setSize(new java.awt.Dimension(1024, 718));
         addWindowFocusListener(new java.awt.event.WindowFocusListener() {
@@ -294,11 +297,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel4.setMinimumSize(new java.awt.Dimension(15, 63));
         jPanel4.setPreferredSize(new java.awt.Dimension(15, 63));
 
-        jLabel3.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel3.setText("1");
+        golsTime1.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
+        golsTime1.setText("1");
 
-        jLabel4.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel4.setText("1");
+        golsTime2.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
+        golsTime2.setText("1");
 
         jLabel5.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
         jLabel5.setText("1");
@@ -313,8 +316,8 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(4, 4, 4)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
+                    .addComponent(golsTime1)
+                    .addComponent(golsTime2)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -322,9 +325,9 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel3)
+                .addComponent(golsTime1)
                 .addGap(0, 0, 0)
-                .addComponent(jLabel4)
+                .addComponent(golsTime2)
                 .addGap(0, 0, 0)
                 .addComponent(jLabel5)
                 .addGap(0, 0, 0)
@@ -1098,7 +1101,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                             .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel75))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         jPanel43Layout.setVerticalGroup(
             jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2490,12 +2493,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(153, 0, 0));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("SIMULAR CAMPEONATO");
-        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton1.setOpaque(true);
+        simularCampeonatoButton.setBackground(new java.awt.Color(153, 0, 0));
+        simularCampeonatoButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        simularCampeonatoButton.setForeground(new java.awt.Color(255, 255, 255));
+        simularCampeonatoButton.setText("SIMULAR CAMPEONATO");
+        simularCampeonatoButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        simularCampeonatoButton.setOpaque(true);
+        simularCampeonatoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                simularCampeonatoButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel53Layout = new javax.swing.GroupLayout(jPanel53);
         jPanel53.setLayout(jPanel53Layout);
@@ -2504,8 +2512,8 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addGroup(jPanel53Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel53Layout.createSequentialGroup()
@@ -2519,7 +2527,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                                 .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(simularCampeonatoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel53Layout.createSequentialGroup()
                         .addGap(211, 211, 211)
                         .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -2537,41 +2545,35 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel53Layout.createSequentialGroup()
                             .addGap(47, 47, 47)
                             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel53Layout.createSequentialGroup()
+                            .addGap(90, 90, 90)
+                            .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel53Layout.createSequentialGroup()
+                            .addGap(49, 49, 49)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel53Layout.createSequentialGroup()
                         .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel53Layout.createSequentialGroup()
-                                .addGap(162, 162, 162)
-                                .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(jPanel53Layout.createSequentialGroup()
+                                    .addGap(32, 32, 32)
+                                    .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(63, 63, 63)
                                     .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel53Layout.createSequentialGroup()
-                                            .addGap(32, 32, 32)
-                                            .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(63, 63, 63)
-                                            .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jPanel60, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGap(51, 51, 51))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel53Layout.createSequentialGroup()
-                                            .addGap(163, 163, 163)
-                                            .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jPanel60, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
                                     .addComponent(carregarTimesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel53Layout.createSequentialGroup()
                                     .addGap(89, 89, 89)
-                                    .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(jPanel53Layout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel53Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel53Layout.createSequentialGroup()
-                            .addGap(49, 49, 49)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(301, Short.MAX_VALUE))
+                                    .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel53Layout.createSequentialGroup()
+                                .addGap(162, 162, 162)
+                                .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(18, 18, 18)
+                        .addComponent(simularCampeonatoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(283, Short.MAX_VALUE))
         );
 
         jMenuBar1.setBackground(new java.awt.Color(204, 0, 0));
@@ -2700,6 +2702,10 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_carregarTimesButtonActionPerformed
 
+    private void simularCampeonatoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simularCampeonatoButtonActionPerformed
+        
+    }//GEN-LAST:event_simularCampeonatoButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2740,7 +2746,8 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton carregarTimesButton;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel golsTime1;
+    private javax.swing.JLabel golsTime2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel103;
@@ -2766,7 +2773,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
@@ -2777,7 +2783,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -2906,6 +2911,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton simularCampeonatoButton;
     private javax.swing.JLabel timeFinalLabel1;
     private javax.swing.JLabel timeFinalLabel2;
     private javax.swing.JLabel timeGrupoALabel1;
@@ -2953,23 +2959,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel timesSemiFinalLabel1R;
     private javax.swing.JLabel timesSemiFinalLabel2R;
     // End of variables declaration//GEN-END:variables
-    
-    /*public void carregaTimes() throws Exception {
-        int timesGrupos[] = Grupo.sorteioTimes();
-        int i = 0;
-        for (i = 0; i < 32; i++){
-            timeGrupoALabel1.getText();
-        }
-    }*/
-    
-   /* public void carregaTimes1() throws Exception {
-        DAOTime daot = new DAOTime();
-        List times = (List) daot.buscarTimesLista();
-        int index;
-        jTextField1.setText(times.getItem(index = 1));
-        }*/
-
-    
+        
     public void carregaTimes2() throws Exception {
         DAOTime daot = new DAOTime();
         Time time = new Time();
@@ -3042,12 +3032,46 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
            timeGrupoHLabel3.setText(String.valueOf(time));}
            time = daot.getTime(32); {
            timeGrupoHLabel4.setText(String.valueOf(time));}
-        }
-           
-           
-        }
-    
-    public void simularGols() {
-        
+        }   
     }
+    
+    /*public void simularGols() throws SQLException {
+        Random r = new Random();
+        DAOTime daot = new DAOTime();
+        Time time = new Time();
+               
+        if (time == null) {
+            JOptionPane.showMessageDialog(null, "Conexão com o banco falhou, times não encontrados.");
+        }
+        else {
+        time.setGols(r.nextInt(6));
+        time.setId(1);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6));
+        time.setId(2);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6));
+        time.setId(3);
+        daot.setGols(time);
+        }
+    }*/
+    
+    /*public void carregarResultados() {
+        DAOTime daot = new DAOTime();
+        Time time = new Time();
+        try {
+            if (time == null) {
+                JOptionPane.showMessageDialog(null, "Conexão com o banco falhou, times não encontrados.");
+            } else {
+                time = daot.getGols(1);
+                golsTime1.setText(String.valueOf(time));
+                time = daot.getGols(2);
+                golsTime2.setText(String.valueOf(time));
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Problemas ao carregar os times. ERRO: " + e);
+        }
+    }*/
 }

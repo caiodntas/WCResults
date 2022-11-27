@@ -12,7 +12,6 @@ public class Jogo {
     }
     
     //getters and setters
-
     public int getGolsTime1() {
         return golsTime1;
     }

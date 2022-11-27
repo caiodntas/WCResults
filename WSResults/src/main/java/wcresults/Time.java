@@ -4,12 +4,20 @@ public class Time {
     private int id;
     private String nome;
     private int grupo;
+    private int gols;
 
     //construtor
     public Time(int id, String nome, int grupo) {
         this.id = id;
         this.nome = nome;
         this.grupo = grupo;
+    }
+    
+    public Time(int id, String nome, int grupo, int gols) {
+        this.id = id;
+        this.nome = nome;
+        this.grupo = grupo;
+        this.gols = gols;
     }
 
     public Time(int id, String nome) {
@@ -52,7 +60,14 @@ public class Time {
     public void setGrupo(int grupo) {
         this.grupo = grupo;
     }
-    
+
+    public int getGols() {
+        return gols;
+    }
+
+    public void setGols(int gols) {
+        this.gols = gols;
+    }
     
     @Override
     public String toString() {
