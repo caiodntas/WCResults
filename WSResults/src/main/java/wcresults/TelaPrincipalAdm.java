@@ -238,6 +238,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             }
         });
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setMaximumSize(new java.awt.Dimension(146, 400));
         jPanel1.setMinimumSize(new java.awt.Dimension(146, 400));
         jPanel1.setPreferredSize(new java.awt.Dimension(146, 400));
@@ -245,14 +246,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel2.setText("GRUPOS");
 
+        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
         jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel11.setMaximumSize(new java.awt.Dimension(146, 83));
         jPanel11.setMinimumSize(new java.awt.Dimension(146, 83));
 
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setMaximumSize(new java.awt.Dimension(126, 63));
         jPanel3.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel3.setPreferredSize(new java.awt.Dimension(128, 63));
 
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel7.setMinimumSize(new java.awt.Dimension(56, 63));
         jPanel7.setPreferredSize(new java.awt.Dimension(56, 63));
@@ -305,6 +309,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel5.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -350,14 +355,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
+        jPanel18.setBackground(new java.awt.Color(255, 255, 255));
         jPanel18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel18.setMaximumSize(new java.awt.Dimension(146, 83));
         jPanel18.setMinimumSize(new java.awt.Dimension(146, 83));
 
+        jPanel19.setBackground(new java.awt.Color(255, 255, 255));
         jPanel19.setMaximumSize(new java.awt.Dimension(126, 63));
         jPanel19.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel19.setPreferredSize(new java.awt.Dimension(128, 63));
 
+        jPanel22.setBackground(new java.awt.Color(255, 255, 255));
         jPanel22.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel22.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -412,6 +420,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel20.setBackground(new java.awt.Color(255, 255, 255));
         jPanel20.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel20.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -457,14 +466,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
+        jPanel13.setBackground(new java.awt.Color(255, 255, 255));
         jPanel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel13.setMaximumSize(new java.awt.Dimension(146, 83));
         jPanel13.setMinimumSize(new java.awt.Dimension(146, 83));
 
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
         jPanel14.setMaximumSize(new java.awt.Dimension(126, 63));
         jPanel14.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel14.setPreferredSize(new java.awt.Dimension(128, 63));
 
+        jPanel17.setBackground(new java.awt.Color(255, 255, 255));
         jPanel17.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel17.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -518,6 +530,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
         jPanel15.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel15.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -562,14 +575,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel12.setBackground(new java.awt.Color(255, 255, 255));
         jPanel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel12.setMaximumSize(new java.awt.Dimension(146, 83));
         jPanel12.setMinimumSize(new java.awt.Dimension(146, 83));
 
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setMaximumSize(new java.awt.Dimension(126, 63));
         jPanel6.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel6.setPreferredSize(new java.awt.Dimension(128, 63));
 
+        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
         jPanel10.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel10.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -621,6 +637,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel8.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -693,10 +710,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
+        jPanel43.setBackground(new java.awt.Color(255, 255, 255));
         jPanel43.setMaximumSize(new java.awt.Dimension(75, 400));
         jPanel43.setMinimumSize(new java.awt.Dimension(75, 400));
         jPanel43.setPreferredSize(new java.awt.Dimension(75, 92));
 
+        jPanel44.setBackground(new java.awt.Color(255, 255, 255));
         jPanel44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel44.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel44.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -729,6 +748,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel45.setBackground(new java.awt.Color(255, 255, 255));
         jPanel45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel45.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel45.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -761,6 +781,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel47.setBackground(new java.awt.Color(255, 255, 255));
         jPanel47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel47.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel47.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -793,6 +814,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel49.setBackground(new java.awt.Color(255, 255, 255));
         jPanel49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel49.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel49.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -922,6 +944,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel54.setBackground(new java.awt.Color(255, 255, 255));
         jPanel54.setMaximumSize(new java.awt.Dimension(75, 400));
         jPanel54.setMinimumSize(new java.awt.Dimension(75, 400));
         jPanel54.setPreferredSize(new java.awt.Dimension(75, 92));
@@ -929,6 +952,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel93.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
         jLabel93.setText("QUARTAS");
 
+        jPanel55.setBackground(new java.awt.Color(255, 255, 255));
         jPanel55.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel55.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel55.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -958,6 +982,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel56.setBackground(new java.awt.Color(255, 255, 255));
         jPanel56.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel56.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel56.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -1046,6 +1071,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel60.setBackground(new java.awt.Color(255, 255, 255));
         jPanel60.setMaximumSize(new java.awt.Dimension(75, 400));
         jPanel60.setMinimumSize(new java.awt.Dimension(75, 400));
         jPanel60.setPreferredSize(new java.awt.Dimension(75, 92));
@@ -1053,6 +1079,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel103.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
         jLabel103.setText("SEMIFINAL");
 
+        jPanel61.setBackground(new java.awt.Color(255, 255, 255));
         jPanel61.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel61.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel61.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -1127,6 +1154,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel57.setBackground(new java.awt.Color(255, 255, 255));
         jPanel57.setMaximumSize(new java.awt.Dimension(75, 400));
         jPanel57.setMinimumSize(new java.awt.Dimension(75, 400));
         jPanel57.setPreferredSize(new java.awt.Dimension(75, 92));
@@ -1134,6 +1162,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel98.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
         jLabel98.setText("QUARTAS");
 
+        jPanel58.setBackground(new java.awt.Color(255, 255, 255));
         jPanel58.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel58.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel58.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -1163,6 +1192,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel59.setBackground(new java.awt.Color(255, 255, 255));
         jPanel59.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel59.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel59.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -1253,10 +1283,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel46.setBackground(new java.awt.Color(255, 255, 255));
         jPanel46.setMaximumSize(new java.awt.Dimension(75, 400));
         jPanel46.setMinimumSize(new java.awt.Dimension(75, 400));
         jPanel46.setPreferredSize(new java.awt.Dimension(75, 92));
 
+        jPanel48.setBackground(new java.awt.Color(255, 255, 255));
         jPanel48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel48.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel48.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -1286,6 +1318,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel50.setBackground(new java.awt.Color(255, 255, 255));
         jPanel50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel50.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel50.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -1315,6 +1348,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel51.setBackground(new java.awt.Color(255, 255, 255));
         jPanel51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel51.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel51.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -1344,6 +1378,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel52.setBackground(new java.awt.Color(255, 255, 255));
         jPanel52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel52.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel52.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -1485,6 +1520,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setMaximumSize(new java.awt.Dimension(146, 400));
         jPanel2.setMinimumSize(new java.awt.Dimension(146, 400));
         jPanel2.setPreferredSize(new java.awt.Dimension(146, 400));
@@ -1492,14 +1528,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel38.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel38.setText("GRUPOS");
 
+        jPanel23.setBackground(new java.awt.Color(255, 255, 255));
         jPanel23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel23.setMaximumSize(new java.awt.Dimension(146, 83));
         jPanel23.setMinimumSize(new java.awt.Dimension(146, 83));
 
+        jPanel24.setBackground(new java.awt.Color(255, 255, 255));
         jPanel24.setMaximumSize(new java.awt.Dimension(126, 63));
         jPanel24.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel24.setPreferredSize(new java.awt.Dimension(128, 63));
 
+        jPanel25.setBackground(new java.awt.Color(255, 255, 255));
         jPanel25.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel25.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1522,6 +1561,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(jLabel39))
         );
 
+        jPanel27.setBackground(new java.awt.Color(255, 255, 255));
         jPanel27.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel27.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1595,14 +1635,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
+        jPanel28.setBackground(new java.awt.Color(255, 255, 255));
         jPanel28.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel28.setMaximumSize(new java.awt.Dimension(146, 83));
         jPanel28.setMinimumSize(new java.awt.Dimension(146, 83));
 
+        jPanel29.setBackground(new java.awt.Color(255, 255, 255));
         jPanel29.setMaximumSize(new java.awt.Dimension(126, 63));
         jPanel29.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel29.setPreferredSize(new java.awt.Dimension(128, 63));
 
+        jPanel30.setBackground(new java.awt.Color(255, 255, 255));
         jPanel30.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel30.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1625,6 +1668,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(jLabel48))
         );
 
+        jPanel32.setBackground(new java.awt.Color(255, 255, 255));
         jPanel32.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel32.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1695,14 +1739,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
+        jPanel33.setBackground(new java.awt.Color(255, 255, 255));
         jPanel33.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel33.setMaximumSize(new java.awt.Dimension(146, 83));
         jPanel33.setMinimumSize(new java.awt.Dimension(146, 83));
 
+        jPanel34.setBackground(new java.awt.Color(255, 255, 255));
         jPanel34.setMaximumSize(new java.awt.Dimension(126, 63));
         jPanel34.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel34.setPreferredSize(new java.awt.Dimension(128, 63));
 
+        jPanel35.setBackground(new java.awt.Color(255, 255, 255));
         jPanel35.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel35.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1725,6 +1772,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(jLabel57))
         );
 
+        jPanel37.setBackground(new java.awt.Color(255, 255, 255));
         jPanel37.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel37.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1798,14 +1846,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
+        jPanel38.setBackground(new java.awt.Color(255, 255, 255));
         jPanel38.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel38.setMaximumSize(new java.awt.Dimension(146, 83));
         jPanel38.setMinimumSize(new java.awt.Dimension(146, 83));
 
+        jPanel39.setBackground(new java.awt.Color(255, 255, 255));
         jPanel39.setMaximumSize(new java.awt.Dimension(126, 63));
         jPanel39.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel39.setPreferredSize(new java.awt.Dimension(128, 63));
 
+        jPanel40.setBackground(new java.awt.Color(255, 255, 255));
         jPanel40.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel40.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1828,6 +1879,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(jLabel66))
         );
 
+        jPanel42.setBackground(new java.awt.Color(255, 255, 255));
         jPanel42.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel42.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1929,6 +1981,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
+        jPanel62.setBackground(new java.awt.Color(255, 255, 255));
         jPanel62.setMaximumSize(new java.awt.Dimension(75, 400));
         jPanel62.setMinimumSize(new java.awt.Dimension(75, 400));
         jPanel62.setPreferredSize(new java.awt.Dimension(75, 92));
@@ -1936,6 +1989,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel106.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
         jLabel106.setText("SEMIFINAL");
 
+        jPanel63.setBackground(new java.awt.Color(255, 255, 255));
         jPanel63.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel63.setMaximumSize(new java.awt.Dimension(75, 83));
         jPanel63.setMinimumSize(new java.awt.Dimension(75, 83));
@@ -2009,6 +2063,9 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel64.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel66.setBackground(new java.awt.Color(255, 255, 255));
         jPanel66.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         timeFinalLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -2142,39 +2199,37 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel53Layout.setVerticalGroup(
             jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel53Layout.createSequentialGroup()
+                .addGap(141, 141, 141)
                 .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel53Layout.createSequentialGroup()
-                            .addGap(47, 47, 47)
+                            .addGap(15, 15, 15)
                             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel53Layout.createSequentialGroup()
-                            .addGap(90, 90, 90)
+                            .addGap(58, 58, 58)
                             .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel53Layout.createSequentialGroup()
-                            .addGap(49, 49, 49)
+                            .addGap(17, 17, 17)
                             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel53Layout.createSequentialGroup()
                         .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel53Layout.createSequentialGroup()
-                                .addGap(162, 162, 162)
+                                .addGap(130, 130, 130)
                                 .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel53Layout.createSequentialGroup()
-                                .addGap(32, 32, 32)
-                                .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel53Layout.createSequentialGroup()
-                                        .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(63, 63, 63)
-                                        .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jPanel60, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(69, 69, 69)
-                                        .addComponent(carregarTimesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(63, 63, 63)
+                                .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jPanel60, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(69, 69, 69)
+                                .addComponent(carregarTimesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(simularCampeonatoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(283, Short.MAX_VALUE))
+                .addContainerGap(174, Short.MAX_VALUE))
         );
 
         jMenuBar1.setBackground(new java.awt.Color(204, 0, 0));
@@ -2248,15 +2303,13 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel53, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel53, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel53, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -2671,7 +2724,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         
         time.setGols(r.nextInt(3)); 
         time.setId(16);
-        daot.setGols(time);
+        daot.setGols(time);}
         
         int id1 = r.nextInt(1,4);
         int id2 = r.nextInt(5,8); 
@@ -2682,26 +2735,17 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         int id7 = r.nextInt(25,28); 
         int id8 = r.nextInt(29,32); 
         
-        time = daot.getTime(id1); {
+        time = daot.getTime(id1);
         time1OitavasLabel.setText(String.valueOf(time));
-        int golsTime = r.nextInt(0,3);
         
-        jLabel7.setText(String.valueOf(golsTime));
-        }
-        
-        time = daot.getTime(id1+1); {
+        time = daot.getTime(id1+1); 
         jLabel77.setText(String.valueOf(time));
-        int golsTime = r.nextInt(0,3);
         
+        time = daot.getTime(id2);
+        jLabel78.setText(String.valueOf(time));
         
-        jLabel8.setText(String.valueOf(golsTime));
-        }
-        
-        time = daot.getTime(id2); {
-        jLabel78.setText(String.valueOf(time));}
-        
-        time = daot.getTime(id2+1); {
-        jLabel79.setText(String.valueOf(time));}
+        time = daot.getTime(id2+1);
+        jLabel79.setText(String.valueOf(time));
         
         time = daot.getTime(id3); {
         jLabel80.setText(String.valueOf(time));}
@@ -2741,7 +2785,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         
         
         }
-    }
+    
     /*public void carregarResultados() {
         DAOTime daot = new DAOTime();
         Time time = new Time();
