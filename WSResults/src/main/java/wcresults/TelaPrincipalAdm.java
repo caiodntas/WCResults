@@ -40,11 +40,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        golsTime1 = new javax.swing.JLabel();
-        golsTime2 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         timeGrupoALabel1 = new javax.swing.JLabel();
         timeGrupoALabel2 = new javax.swing.JLabel();
@@ -54,11 +49,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel18 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
-        jPanel21 = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
         jPanel22 = new javax.swing.JPanel();
         timeGrupoBLabel1 = new javax.swing.JLabel();
         timeGrupoBLabel2 = new javax.swing.JLabel();
@@ -68,11 +58,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
-        jPanel16 = new javax.swing.JPanel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
         timeGrupoCLabel1 = new javax.swing.JLabel();
         timeGrupoCLabel2 = new javax.swing.JLabel();
@@ -82,11 +67,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         timeGrupoDLabel1 = new javax.swing.JLabel();
         timeGrupoDLabel2 = new javax.swing.JLabel();
@@ -175,11 +155,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel24 = new javax.swing.JPanel();
         jPanel25 = new javax.swing.JPanel();
         jLabel39 = new javax.swing.JLabel();
-        jPanel26 = new javax.swing.JPanel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
         jPanel27 = new javax.swing.JPanel();
         timeGrupoELabel1 = new javax.swing.JLabel();
         timeGrupoELabel2 = new javax.swing.JLabel();
@@ -189,11 +164,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel29 = new javax.swing.JPanel();
         jPanel30 = new javax.swing.JPanel();
         jLabel48 = new javax.swing.JLabel();
-        jPanel31 = new javax.swing.JPanel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
         jPanel32 = new javax.swing.JPanel();
         timeGrupoFLabel1 = new javax.swing.JLabel();
         timeGrupoFLabel2 = new javax.swing.JLabel();
@@ -203,11 +173,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel34 = new javax.swing.JPanel();
         jPanel35 = new javax.swing.JPanel();
         jLabel57 = new javax.swing.JLabel();
-        jPanel36 = new javax.swing.JPanel();
-        jLabel58 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
         jPanel37 = new javax.swing.JPanel();
         timeGrupoGLabel1 = new javax.swing.JLabel();
         timeGrupoGLabel2 = new javax.swing.JLabel();
@@ -217,11 +182,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel39 = new javax.swing.JPanel();
         jPanel40 = new javax.swing.JPanel();
         jLabel66 = new javax.swing.JLabel();
-        jPanel41 = new javax.swing.JPanel();
-        jLabel67 = new javax.swing.JLabel();
-        jLabel68 = new javax.swing.JLabel();
-        jLabel69 = new javax.swing.JLabel();
-        jLabel70 = new javax.swing.JLabel();
         jPanel42 = new javax.swing.JPanel();
         timeGrupoHLabel1 = new javax.swing.JLabel();
         timeGrupoHLabel2 = new javax.swing.JLabel();
@@ -293,48 +253,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel3.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel3.setPreferredSize(new java.awt.Dimension(128, 63));
 
-        jPanel4.setMaximumSize(new java.awt.Dimension(15, 63));
-        jPanel4.setMinimumSize(new java.awt.Dimension(15, 63));
-        jPanel4.setPreferredSize(new java.awt.Dimension(15, 63));
-
-        golsTime1.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        golsTime1.setText("1");
-
-        golsTime2.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        golsTime2.setText("1");
-
-        jLabel5.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel5.setText("1");
-
-        jLabel6.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel6.setText("1");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(golsTime1)
-                    .addComponent(golsTime2)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(golsTime1)
-                .addGap(0, 0, 0)
-                .addComponent(golsTime2)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel5)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel6)
-                .addGap(0, 3, Short.MAX_VALUE))
-        );
-
         jPanel7.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel7.setMinimumSize(new java.awt.Dimension(56, 63));
         jPanel7.setPreferredSize(new java.awt.Dimension(56, 63));
@@ -355,7 +273,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(timeGrupoALabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(timeGrupoALabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
             .addComponent(timeGrupoALabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(timeGrupoALabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(timeGrupoALabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -370,7 +288,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(timeGrupoALabel3)
                 .addGap(0, 0, 0)
                 .addComponent(timeGrupoALabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -378,15 +296,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(27, 27, 27)
                 .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -443,47 +358,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel19.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel19.setPreferredSize(new java.awt.Dimension(128, 63));
 
-        jPanel21.setMaximumSize(new java.awt.Dimension(15, 63));
-        jPanel21.setMinimumSize(new java.awt.Dimension(15, 63));
-
-        jLabel30.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel30.setText("1");
-
-        jLabel31.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel31.setText("1");
-
-        jLabel32.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel32.setText("1");
-
-        jLabel33.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel33.setText("1");
-
-        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
-        jPanel21.setLayout(jPanel21Layout);
-        jPanel21Layout.setHorizontalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel30)
-                    .addComponent(jLabel31)
-                    .addComponent(jLabel32)
-                    .addComponent(jLabel33))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel21Layout.setVerticalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
-                .addComponent(jLabel30)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel31)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel32)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel33)
-                .addGap(0, 3, Short.MAX_VALUE))
-        );
-
         jPanel22.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel22.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -506,7 +380,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addComponent(timeGrupoBLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel22Layout.createSequentialGroup()
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(timeGrupoBLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(timeGrupoBLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
                     .addComponent(timeGrupoBLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(timeGrupoBLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -521,7 +395,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(timeGrupoBLabel3)
                 .addGap(0, 0, 0)
                 .addComponent(timeGrupoBLabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
@@ -529,15 +403,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(29, 29, 29)
                 .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -594,47 +465,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel14.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel14.setPreferredSize(new java.awt.Dimension(128, 63));
 
-        jPanel16.setMaximumSize(new java.awt.Dimension(15, 63));
-        jPanel16.setMinimumSize(new java.awt.Dimension(15, 63));
-
-        jLabel21.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel21.setText("1");
-
-        jLabel22.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel22.setText("1");
-
-        jLabel23.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel23.setText("1");
-
-        jLabel24.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel24.setText("1");
-
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel22)
-                    .addComponent(jLabel23)
-                    .addComponent(jLabel24))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addComponent(jLabel21)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel22)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel23)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel24)
-                .addGap(0, 3, Short.MAX_VALUE))
-        );
-
         jPanel17.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel17.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -671,7 +501,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(timeGrupoCLabel3)
                 .addGap(0, 0, 0)
                 .addComponent(timeGrupoCLabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
@@ -679,15 +509,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(29, 29, 29)
                 .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -743,47 +570,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel6.setMinimumSize(new java.awt.Dimension(126, 63));
         jPanel6.setPreferredSize(new java.awt.Dimension(128, 63));
 
-        jPanel9.setMaximumSize(new java.awt.Dimension(15, 63));
-        jPanel9.setMinimumSize(new java.awt.Dimension(15, 63));
-
-        jLabel12.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel12.setText("1");
-
-        jLabel13.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel13.setText("1");
-
-        jLabel14.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel14.setText("1");
-
-        jLabel15.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel15.setText("1");
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel15))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addComponent(jLabel12)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel13)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel14)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel15)
-                .addGap(0, 3, Short.MAX_VALUE))
-        );
-
         jPanel10.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel10.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -803,7 +589,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(timeGrupoDLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(timeGrupoDLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
             .addComponent(timeGrupoDLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(timeGrupoDLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(timeGrupoDLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -818,7 +604,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(timeGrupoDLabel3)
                 .addGap(0, 0, 0)
                 .addComponent(timeGrupoDLabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -826,15 +612,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(29, 29, 29)
                 .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -1124,15 +907,15 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel8)
-                        .addGap(14, 14, 14)
+                        .addGap(31, 31, 31)
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel10)
-                        .addGap(14, 14, 14)
+                        .addGap(29, 29, 29)
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel17)
-                        .addGap(29, 29, 29)
+                        .addGap(27, 27, 27)
                         .addComponent(jLabel18)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel19)))
@@ -1739,47 +1522,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(jLabel39))
         );
 
-        jPanel26.setMaximumSize(new java.awt.Dimension(15, 63));
-        jPanel26.setMinimumSize(new java.awt.Dimension(15, 63));
-
-        jLabel40.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel40.setText("1");
-
-        jLabel41.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel41.setText("1");
-
-        jLabel42.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel42.setText("1");
-
-        jLabel43.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel43.setText("1");
-
-        javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
-        jPanel26.setLayout(jPanel26Layout);
-        jPanel26Layout.setHorizontalGroup(
-            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel26Layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel40)
-                    .addComponent(jLabel41)
-                    .addComponent(jLabel42)
-                    .addComponent(jLabel43))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel26Layout.setVerticalGroup(
-            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel26Layout.createSequentialGroup()
-                .addComponent(jLabel40)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel41)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel42)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel43)
-                .addGap(0, 3, Short.MAX_VALUE))
-        );
-
         jPanel27.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel27.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1817,7 +1559,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(timeGrupoELabel3)
                 .addGap(0, 0, 0)
                 .addComponent(timeGrupoELabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
@@ -1826,15 +1568,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
                 .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(29, 29, 29)
                 .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -1886,47 +1625,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(jLabel48))
         );
 
-        jPanel31.setMaximumSize(new java.awt.Dimension(15, 63));
-        jPanel31.setMinimumSize(new java.awt.Dimension(15, 63));
-
-        jLabel49.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel49.setText("1");
-
-        jLabel50.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel50.setText("1");
-
-        jLabel51.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel51.setText("1");
-
-        jLabel52.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel52.setText("1");
-
-        javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
-        jPanel31.setLayout(jPanel31Layout);
-        jPanel31Layout.setHorizontalGroup(
-            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel31Layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel49)
-                    .addComponent(jLabel50)
-                    .addComponent(jLabel51)
-                    .addComponent(jLabel52))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel31Layout.setVerticalGroup(
-            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel31Layout.createSequentialGroup()
-                .addComponent(jLabel49)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel50)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel51)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel52)
-                .addGap(0, 3, Short.MAX_VALUE))
-        );
-
         jPanel32.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel32.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -1961,7 +1659,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(timeGrupoFLabel3)
                 .addGap(0, 0, 0)
                 .addComponent(timeGrupoFLabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
@@ -1970,15 +1668,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel29Layout.createSequentialGroup()
                 .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(29, 29, 29)
                 .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel29Layout.setVerticalGroup(
             jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -2030,47 +1725,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(jLabel57))
         );
 
-        jPanel36.setMaximumSize(new java.awt.Dimension(15, 63));
-        jPanel36.setMinimumSize(new java.awt.Dimension(15, 63));
-
-        jLabel58.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel58.setText("1");
-
-        jLabel59.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel59.setText("1");
-
-        jLabel60.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel60.setText("1");
-
-        jLabel61.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel61.setText("1");
-
-        javax.swing.GroupLayout jPanel36Layout = new javax.swing.GroupLayout(jPanel36);
-        jPanel36.setLayout(jPanel36Layout);
-        jPanel36Layout.setHorizontalGroup(
-            jPanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel36Layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(jPanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel58)
-                    .addComponent(jLabel59)
-                    .addComponent(jLabel60)
-                    .addComponent(jLabel61))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel36Layout.setVerticalGroup(
-            jPanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel36Layout.createSequentialGroup()
-                .addComponent(jLabel58)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel59)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel60)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel61)
-                .addGap(0, 3, Short.MAX_VALUE))
-        );
-
         jPanel37.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel37.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -2108,7 +1762,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(timeGrupoGLabel3)
                 .addGap(0, 0, 0)
                 .addComponent(timeGrupoGLabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
@@ -2117,15 +1771,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
                 .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel34Layout.setVerticalGroup(
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -2177,47 +1828,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(jLabel66))
         );
 
-        jPanel41.setMaximumSize(new java.awt.Dimension(15, 63));
-        jPanel41.setMinimumSize(new java.awt.Dimension(15, 63));
-
-        jLabel67.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel67.setText("1");
-
-        jLabel68.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel68.setText("1");
-
-        jLabel69.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel69.setText("1");
-
-        jLabel70.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
-        jLabel70.setText("1");
-
-        javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
-        jPanel41.setLayout(jPanel41Layout);
-        jPanel41Layout.setHorizontalGroup(
-            jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel41Layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel67)
-                    .addComponent(jLabel68)
-                    .addComponent(jLabel69)
-                    .addComponent(jLabel70))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel41Layout.setVerticalGroup(
-            jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel41Layout.createSequentialGroup()
-                .addComponent(jLabel67)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel68)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel69)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel70)
-                .addGap(0, 3, Short.MAX_VALUE))
-        );
-
         jPanel42.setMaximumSize(new java.awt.Dimension(56, 63));
         jPanel42.setMinimumSize(new java.awt.Dimension(56, 63));
 
@@ -2255,7 +1865,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
                 .addComponent(timeGrupoHLabel3)
                 .addGap(0, 0, 0)
                 .addComponent(timeGrupoHLabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 3, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
@@ -2264,15 +1874,12 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel39Layout.createSequentialGroup()
                 .addComponent(jPanel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(23, 23, 23)
                 .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel39Layout.setVerticalGroup(
             jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -2744,77 +2351,45 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton carregarTimesButton;
-    private javax.swing.JLabel golsTime1;
-    private javax.swing.JLabel golsTime2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel106;
     private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel75;
@@ -2849,35 +2424,28 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel30;
-    private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel32;
     private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel34;
     private javax.swing.JPanel jPanel35;
-    private javax.swing.JPanel jPanel36;
     private javax.swing.JPanel jPanel37;
     private javax.swing.JPanel jPanel38;
     private javax.swing.JPanel jPanel39;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel40;
-    private javax.swing.JPanel jPanel41;
     private javax.swing.JPanel jPanel42;
     private javax.swing.JPanel jPanel43;
     private javax.swing.JPanel jPanel44;
@@ -2906,7 +2474,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel66;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton simularCampeonatoButton;
     private javax.swing.JLabel time1OitavasLabel;
@@ -3042,72 +2609,137 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Conexão com o banco falhou, times não encontrados.");
         }
         else {
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(1);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(2);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(3);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(4);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(5);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(6);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(7);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(8);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(9);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(10);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(11);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(12);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(13);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(14);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(15);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6)); 
+        time.setGols(r.nextInt(3)); 
         time.setId(16);
         daot.setGols(time);
         
-        //time = daot.getTime(r.nextInt(5)+1); {
-        //time1OitavasLabel.setText(String.valueOf(time));}
+        int id1 = r.nextInt(1,4);
+        int id2 = r.nextInt(5,8); 
+        int id3 = r.nextInt(9,12); 
+        int id4 = r.nextInt(13,16); 
+        int id5 = r.nextInt(17,20);
+        int id6 = r.nextInt(21,24); 
+        int id7 = r.nextInt(25,28); 
+        int id8 = r.nextInt(29,32); 
+        
+        time = daot.getTime(id1); {
+        time1OitavasLabel.setText(String.valueOf(time));
+        int golsTime = r.nextInt(0,3);
+        
+        jLabel7.setText(String.valueOf(golsTime));
+        }
+        
+        time = daot.getTime(id1+1); {
+        jLabel77.setText(String.valueOf(time));
+        int golsTime = r.nextInt(0,3);
+        
+        
+        jLabel8.setText(String.valueOf(golsTime));
+        }
+        
+        time = daot.getTime(id2); {
+        jLabel78.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id2+1); {
+        jLabel79.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id3); {
+        jLabel80.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id3+1); {
+        jLabel81.setText(String.valueOf(time));}
+
+        time = daot.getTime(id4); {
+        jLabel84.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id4+1); {
+        jLabel85.setText(String.valueOf(time));}
+
+        time = daot.getTime(id5); {
+        jLabel83.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id5+1); {
+        jLabel86.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id6); {
+        jLabel87.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id6+1); {
+        jLabel88.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id7); {
+        jLabel89.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id7+1); {
+        jLabel90.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id8); {
+        jLabel91.setText(String.valueOf(time));}
+        
+        time = daot.getTime(id8+1); {
+        jLabel92.setText(String.valueOf(time));}
+        
+        
         }
     }
     /*public void carregarResultados() {
