@@ -96,7 +96,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jPanel43 = new javax.swing.JPanel();
         jPanel44 = new javax.swing.JPanel();
-        jLabel76 = new javax.swing.JLabel();
+        time1OitavasLabel = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
         jPanel45 = new javax.swing.JPanel();
         jLabel78 = new javax.swing.JLabel();
@@ -920,8 +920,8 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jPanel44.setName(""); // NOI18N
         jPanel44.setPreferredSize(new java.awt.Dimension(75, 64));
 
-        jLabel76.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel76.setText("TIME");
+        time1OitavasLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        time1OitavasLabel.setText("TIME");
 
         jLabel77.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel77.setText("TIME");
@@ -933,14 +933,14 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             .addGroup(jPanel44Layout.createSequentialGroup()
                 .addGroup(jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel77, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel76, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(time1OitavasLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel44Layout.setVerticalGroup(
             jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel44Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel76)
+                .addComponent(time1OitavasLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel77)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -2697,7 +2697,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     }//GEN-LAST:event_carregarTimesButtonActionPerformed
 
     private void simularCampeonatoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simularCampeonatoButtonActionPerformed
-        
+        try {
+            simularGols();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Não foi possível simular o campeonato. Erro: " + ex);
+        }
     }//GEN-LAST:event_simularCampeonatoButtonActionPerformed
 
     /**
@@ -2814,7 +2818,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
@@ -2906,6 +2909,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton simularCampeonatoButton;
+    private javax.swing.JLabel time1OitavasLabel;
     private javax.swing.JLabel timeFinalLabel1;
     private javax.swing.JLabel timeFinalLabel2;
     private javax.swing.JLabel timeGrupoALabel1;
@@ -3029,7 +3033,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         }   
     }
     
-    /*public void simularGols() throws SQLException {
+    public void simularGols() throws SQLException {
         Random r = new Random();
         DAOTime daot = new DAOTime();
         Time time = new Time();
@@ -3038,20 +3042,74 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Conexão com o banco falhou, times não encontrados.");
         }
         else {
-        time.setGols(r.nextInt(6));
+        time.setGols(r.nextInt(6)); 
         time.setId(1);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6));
+        time.setGols(r.nextInt(6)); 
         time.setId(2);
         daot.setGols(time);
         
-        time.setGols(r.nextInt(6));
+        time.setGols(r.nextInt(6)); 
         time.setId(3);
         daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(4);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(5);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(6);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(7);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(8);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(9);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(10);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(11);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(12);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(13);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(14);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(15);
+        daot.setGols(time);
+        
+        time.setGols(r.nextInt(6)); 
+        time.setId(16);
+        daot.setGols(time);
+        
+        //time = daot.getTime(r.nextInt(5)+1); {
+        //time1OitavasLabel.setText(String.valueOf(time));}
         }
-    }*/
-    
+    }
     /*public void carregarResultados() {
         DAOTime daot = new DAOTime();
         Time time = new Time();
