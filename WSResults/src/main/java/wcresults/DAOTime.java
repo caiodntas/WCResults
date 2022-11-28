@@ -38,7 +38,7 @@ public class DAOTime {
     
     //USANDO PARA TRAZER A TABELA DE TIMES
     public List <Time> buscarTimes() throws Exception {
-        String sql = "SELECT id, nome FROM time_table";
+        String sql = "SELECT id, nome, grupo FROM time_table";
         ArrayList <Time> times = new ArrayList<>();
         try (Connection c = ConnectionFactory.obtemConexao();
         PreparedStatement ps = c.prepareStatement(sql)){
@@ -46,7 +46,8 @@ public class DAOTime {
                 while (rs.next()){
                     int id = rs.getInt("id");
                     String nome = rs.getString("nome");
-                    times.add(new Time (id, nome));
+                    int grupo = rs.getInt("grupo");
+                    times.add(new Time (id, nome, grupo));
                 }
             } 
         }

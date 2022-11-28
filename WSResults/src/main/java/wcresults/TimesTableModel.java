@@ -10,7 +10,7 @@ import javax.swing.table.AbstractTableModel;
 public class TimesTableModel extends AbstractTableModel {
 
     private List<Time> times;
-    private String[] colunas = {"ID", "NOME"};
+    private String[] colunas = {"ID", "NOME", "GRUPO"};
 
     public TimesTableModel() throws Exception {
         DAOTime dao = new DAOTime();
@@ -24,7 +24,7 @@ public class TimesTableModel extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return 2;
+        return 3;
     }
 
     @Override
@@ -34,6 +34,8 @@ public class TimesTableModel extends AbstractTableModel {
                 return this.times.get(rowIndex).getId();
             case 1:
                 return this.times.get(rowIndex).getNome();
+            case 2:
+                return this.times.get(rowIndex).getGrupo();
             default:
                 return null;
         }
