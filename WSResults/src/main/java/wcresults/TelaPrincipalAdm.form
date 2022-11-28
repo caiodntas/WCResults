@@ -158,6 +158,7 @@
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <Events>
+    <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="formFocusGained"/>
     <EventHandler event="windowGainedFocus" listener="java.awt.event.WindowFocusListener" parameters="java.awt.event.WindowEvent" handler="formWindowGainedFocus"/>
   </Events>
   <AuxValues>
@@ -175,9 +176,9 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <Component id="jPanel53" max="32767" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel53" min="-2" pref="1346" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="26" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -239,7 +240,7 @@
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jPanel46" pref="146" max="32767" attributes="0"/>
+                  <Component id="jPanel46" pref="126" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel2" min="-2" pref="206" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -452,7 +453,7 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="timeGrupoALabel1" alignment="0" pref="146" max="32767" attributes="0"/>
+                              <Component id="timeGrupoALabel1" alignment="0" max="32767" attributes="0"/>
                               <Component id="timeGrupoALabel2" alignment="0" max="32767" attributes="0"/>
                               <Component id="timeGrupoALabel3" alignment="0" max="32767" attributes="0"/>
                               <Component id="timeGrupoALabel4" alignment="0" max="32767" attributes="0"/>
@@ -655,7 +656,7 @@
                               <Component id="timeGrupoBLabel1" alignment="0" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="timeGrupoBLabel2" pref="140" max="32767" attributes="0"/>
+                                      <Component id="timeGrupoBLabel2" max="32767" attributes="0"/>
                                       <Component id="timeGrupoBLabel3" max="32767" attributes="0"/>
                                       <Component id="timeGrupoBLabel4" alignment="0" max="32767" attributes="0"/>
                                   </Group>
@@ -1056,7 +1057,7 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="timeGrupoDLabel1" alignment="0" pref="142" max="32767" attributes="0"/>
+                              <Component id="timeGrupoDLabel1" alignment="0" max="32767" attributes="0"/>
                               <Component id="timeGrupoDLabel2" alignment="0" max="32767" attributes="0"/>
                               <Component id="timeGrupoDLabel3" alignment="0" max="32767" attributes="0"/>
                               <Component id="timeGrupoDLabel4" alignment="0" max="32767" attributes="0"/>
@@ -1686,11 +1687,11 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="jLabel103" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="60" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="jPanel61" min="-2" pref="102" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="22" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -1980,19 +1981,20 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jPanel48" alignment="1" pref="119" max="32767" attributes="0"/>
-                          <Component id="jPanel50" alignment="1" pref="119" max="32767" attributes="0"/>
-                          <Component id="jPanel51" alignment="1" pref="119" max="32767" attributes="0"/>
-                          <Component id="jPanel52" alignment="1" pref="119" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="7" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jPanel48" alignment="1" pref="119" max="32767" attributes="0"/>
+                              <Component id="jPanel50" alignment="1" pref="119" max="32767" attributes="0"/>
+                              <Component id="jPanel51" alignment="1" pref="119" max="32767" attributes="0"/>
+                              <Component id="jPanel52" alignment="1" pref="119" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel82" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="77" max="32767" attributes="0"/>
-                      <Component id="jLabel82" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>

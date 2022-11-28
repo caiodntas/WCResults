@@ -1640,7 +1640,8 @@ public class TelaPrincipalUser extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void formFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_formFocusGained
-
+        TelaPrincipalAdm.
+        jLabel52.getText(tela);
     }//GEN-LAST:event_formFocusGained
 
     /**
