@@ -2285,8 +2285,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         DAOTime daot = new DAOTime();
         Time time = new Time();
         
-        
-        
         if (time == null) {
             JOptionPane.showMessageDialog(null, "Conexão com o banco falhou, times não encontrados.");
         }
@@ -2432,7 +2430,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         daot.setGols(time);}
         
         int id1 = r.nextInt(1,4);
-        int id10 = r.nextInt(1,4);
         int id2 = r.nextInt(5,8); 
         int id3 = r.nextInt(9,12); 
         int id4 = r.nextInt(13,16); 
@@ -2442,13 +2439,11 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         int id8 = r.nextInt(29,32); 
         
         //oitavas
-        do {
-            time = daot.getTime(id1);
-            time1OitavasLabel.setText(String.valueOf(time));
-            
-            time = daot.getTime(id10); 
-            jLabel77.setText(String.valueOf(time));
-        } while (id10 != id1);
+        time = daot.getTime(id1);
+        time1OitavasLabel.setText(String.valueOf(time));
+        
+        time = daot.getTime(id1+1); 
+        jLabel77.setText(String.valueOf(time));
         
         time = daot.getTime(id2);
         jLabel78.setText(String.valueOf(time));
@@ -2499,14 +2494,14 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         timesQuartasLabel4L.setText(jLabel85.getText());
         
         //quartas direita
-        timesQuartasLabel1R.setText(jLabel83.getText());
-        timesQuartasLabel2R.setText(jLabel88.getText());
+        timesQuartasLabel1R.setText(jLabel88.getText());
+        timesQuartasLabel2R.setText(jLabel83.getText());
         timesQuartasLabel3R.setText(jLabel89.getText());
         timesQuartasLabel4R.setText(jLabel92.getText());
         
         //semifinas esquerda
-        timeSemiFinalLabel1L.setText(timesQuartasLabel1L.getText());
-        timeSemiFinalLabel2L.setText(timesQuartasLabel4L.getText());
+        timeSemiFinalLabel1L.setText(timesQuartasLabel4L.getText());
+        timeSemiFinalLabel2L.setText(timesQuartasLabel1L.getText());
         
         //semifinais direita
         timesSemiFinalLabel1R.setText(timesQuartasLabel1R.getText());
@@ -2519,7 +2514,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         int resultado1 = r.nextInt(0,3);
         int resultado2 = r.nextInt(0,3);
         
-        jLabel72.setText(String.valueOf( resultado1));
+        jLabel72.setText(String.valueOf(resultado1));
         jLabel71.setText(String.valueOf(resultado2));
         }
 }
