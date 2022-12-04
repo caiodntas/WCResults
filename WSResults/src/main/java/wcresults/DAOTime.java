@@ -120,32 +120,19 @@ public class DAOTime {
         }
     }
     
-    //não usando
-    public void atribuirOficiais(Time time) {
-        String sql = "UPDATE time_table SET nome = ? AND grupo = ? WHERE id = ?";
+    //USANDO
+    public void atribuirOficiais(String nome, int id) {
+        String sql = "UPDATE time_table SET nome = ? WHERE id = ?";
         try (Connection c = ConnectionFactory.obtemConexao();
             PreparedStatement ps = c.prepareStatement(sql)) {
-            ps.setString(1, time.getNome());
-            ps.setInt (2, time.getGrupo());
-            ps.setInt(3, time.getId());
+            ps.setString(1, nome);
+            ps.setInt(2, id);
             ps.execute();
             ps.close();
             }
         catch (SQLException erro) {
-            JOptionPane.showMessageDialog(null, "Falha ao alterar funcionario" + erro);
+            JOptionPane.showMessageDialog(null, "Falha ao atribuir oficiais" + erro);
         }
-    }
-    
-    //não usando
-    public void atribuirTimesOficiais(Time time) throws Exception {
-        String sql = "UPDATE time_table SET nome = ? AND grupo = ? WHERE id = ?";
-        try (Connection c = ConnectionFactory.obtemConexao();
-            PreparedStatement ps = c.prepareStatement(sql)) {
-            ps.setString(1, time.getNome());
-            ps.setString(2, Integer.toString(time.getGrupo()));
-            ps.execute();
-            ps.close();
-            }
     }
     
 }    

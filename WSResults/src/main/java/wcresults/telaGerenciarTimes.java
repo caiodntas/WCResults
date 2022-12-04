@@ -251,11 +251,45 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
 
     private void importarOficiaisButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_importarOficiaisButtonActionPerformed
         //SUBSTITUIR COM OS 32 TIMES OFICIAS DA COPA A TABELA DE TIMES
+        DAOTime daot = new DAOTime();
         try {
-            ImportarOficiais();
-            JOptionPane.showMessageDialog(null, "Times oficiais importados");
+            daot.atribuirOficiais("Qtar", 1);
+            daot.atribuirOficiais("Equador", 2);
+            daot.atribuirOficiais("Senagal", 3);
+            daot.atribuirOficiais("Holanda", 4);
+            daot.atribuirOficiais("Inglaterra", 5);
+            daot.atribuirOficiais("Irã", 6);
+            daot.atribuirOficiais("Estados Unidos", 7);
+            daot.atribuirOficiais("País de Gales", 8);
+            daot.atribuirOficiais("Argentina", 9);
+            daot.atribuirOficiais("Arabia Saudita", 10);
+            daot.atribuirOficiais("México", 11);
+            daot.atribuirOficiais("Polônia", 12);
+            daot.atribuirOficiais("França", 13);
+            daot.atribuirOficiais("Austrália", 14);
+            daot.atribuirOficiais("Dinamarca", 15);
+            daot.atribuirOficiais("Tunísia", 16);
+            daot.atribuirOficiais("Espanha", 17);
+            daot.atribuirOficiais("Costa Rica", 18);
+            daot.atribuirOficiais("Alemanha", 19);
+            daot.atribuirOficiais("Japão", 20);
+            daot.atribuirOficiais("Bélgica", 21);
+            daot.atribuirOficiais("Canada", 22);
+            daot.atribuirOficiais("Marrocos", 23);
+            daot.atribuirOficiais("Croácia", 24);
+            daot.atribuirOficiais("Brasil", 25);
+            daot.atribuirOficiais("Sérvia", 26);
+            daot.atribuirOficiais("Suíça", 27);
+            daot.atribuirOficiais("Camarões", 28);
+            daot.atribuirOficiais("Portugal", 29);
+            daot.atribuirOficiais("Gana", 30);
+            daot.atribuirOficiais("Uruguai", 31);
+            daot.atribuirOficiais("República da Coreia", 32);
+            
             this.timesTable.setModel(new TimesTableModel());
+            JOptionPane.showMessageDialog(null, "Times oficiais atribuídos");
         } catch (Exception ex) {
+            
             Logger.getLogger(telaGerenciarTimes.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_importarOficiaisButtonActionPerformed
@@ -381,16 +415,4 @@ public class telaGerenciarTimes extends javax.swing.JFrame {
         DAOTime daot = new DAOTime();
         daot.alterarTime(time);
     }
-    
-    public void ImportarOficiais() {
-                
-        Time time = new Time();
-        time.setId(1);
-        time.setNome("QTAR");
-        time.setGrupo(1);
-        
-        DAOTime daot = new DAOTime();
-        daot.atribuirOficiais(time);
-    }
-    
 }
