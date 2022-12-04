@@ -2285,6 +2285,8 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         DAOTime daot = new DAOTime();
         Time time = new Time();
         
+        
+        
         if (time == null) {
             JOptionPane.showMessageDialog(null, "Conexão com o banco falhou, times não encontrados.");
         }
@@ -2430,6 +2432,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         daot.setGols(time);}
         
         int id1 = r.nextInt(1,4);
+        int id10 = r.nextInt(1,4);
         int id2 = r.nextInt(5,8); 
         int id3 = r.nextInt(9,12); 
         int id4 = r.nextInt(13,16); 
@@ -2439,11 +2442,13 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         int id8 = r.nextInt(29,32); 
         
         //oitavas
-        time = daot.getTime(id1);
-        time1OitavasLabel.setText(String.valueOf(time));
-        
-        time = daot.getTime(id1+1); 
-        jLabel77.setText(String.valueOf(time));
+        do {
+            time = daot.getTime(id1);
+            time1OitavasLabel.setText(String.valueOf(time));
+            
+            time = daot.getTime(id10); 
+            jLabel77.setText(String.valueOf(time));
+        } while (id10 != id1);
         
         time = daot.getTime(id2);
         jLabel78.setText(String.valueOf(time));
