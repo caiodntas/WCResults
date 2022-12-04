@@ -6,8 +6,6 @@ package wcresults;
 
 import java.sql.SQLException;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -176,9 +174,9 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         carregarTimesButton = new javax.swing.JButton();
         simularCampeonatoButton = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
+        inicioMenu = new javax.swing.JMenu();
+        gerenciarTimesMenu = new javax.swing.JMenu();
+        gerenciarAdmsMenu = new javax.swing.JMenu();
 
         jTextField1.setEditable(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -1975,56 +1973,56 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         jMenuBar1.setOpaque(true);
         jMenuBar1.setPreferredSize(new java.awt.Dimension(600, 30));
 
-        jMenu1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
-        jMenu1.setText("Início");
-        jMenu1.setAlignmentX(1.0F);
-        jMenu1.setAlignmentY(1.0F);
-        jMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jMenu1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jMenu1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jMenu1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jMenu1.setMargin(new java.awt.Insets(6, 6, 6, 6));
-        jMenu1.setPreferredSize(new java.awt.Dimension(129, 19));
-        jMenuBar1.add(jMenu1);
+        inicioMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        inicioMenu.setText("Início");
+        inicioMenu.setAlignmentX(1.0F);
+        inicioMenu.setAlignmentY(1.0F);
+        inicioMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        inicioMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        inicioMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        inicioMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        inicioMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        inicioMenu.setPreferredSize(new java.awt.Dimension(129, 19));
+        jMenuBar1.add(inicioMenu);
 
-        jMenu2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
-        jMenu2.setText("Gerenciar Times");
-        jMenu2.setAlignmentX(1.0F);
-        jMenu2.setAlignmentY(1.0F);
-        jMenu2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jMenu2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jMenu2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jMenu2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jMenu2.setMargin(new java.awt.Insets(6, 6, 6, 6));
-        jMenu2.setPreferredSize(new java.awt.Dimension(129, 19));
-        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+        gerenciarTimesMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        gerenciarTimesMenu.setText("Gerenciar Times");
+        gerenciarTimesMenu.setAlignmentX(1.0F);
+        gerenciarTimesMenu.setAlignmentY(1.0F);
+        gerenciarTimesMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        gerenciarTimesMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        gerenciarTimesMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        gerenciarTimesMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        gerenciarTimesMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarTimesMenu.setPreferredSize(new java.awt.Dimension(129, 19));
+        gerenciarTimesMenu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu2MouseClicked(evt);
+                gerenciarTimesMenuMouseClicked(evt);
             }
         });
-        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+        gerenciarTimesMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu2ActionPerformed(evt);
+                gerenciarTimesMenuActionPerformed(evt);
             }
         });
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(gerenciarTimesMenu);
 
-        jMenu3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
-        jMenu3.setText("Gerenciar Administradores");
-        jMenu3.setAlignmentX(1.0F);
-        jMenu3.setAlignmentY(1.0F);
-        jMenu3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jMenu3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jMenu3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jMenu3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jMenu3.setMargin(new java.awt.Insets(6, 6, 6, 6));
-        jMenu3.setPreferredSize(new java.awt.Dimension(180, 19));
-        jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
+        gerenciarAdmsMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0), 2));
+        gerenciarAdmsMenu.setText("Gerenciar Administradores");
+        gerenciarAdmsMenu.setAlignmentX(1.0F);
+        gerenciarAdmsMenu.setAlignmentY(1.0F);
+        gerenciarAdmsMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        gerenciarAdmsMenu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        gerenciarAdmsMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        gerenciarAdmsMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        gerenciarAdmsMenu.setMargin(new java.awt.Insets(6, 6, 6, 6));
+        gerenciarAdmsMenu.setPreferredSize(new java.awt.Dimension(180, 19));
+        gerenciarAdmsMenu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu3MouseClicked(evt);
+                gerenciarAdmsMenuMouseClicked(evt);
             }
         });
-        jMenuBar1.add(jMenu3);
+        jMenuBar1.add(gerenciarAdmsMenu);
 
         setJMenuBar(jMenuBar1);
 
@@ -2044,26 +2042,26 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
-    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+    private void gerenciarTimesMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gerenciarTimesMenuActionPerformed
         // TODO add your handling code here:
         telaGerenciarTimes vs = new telaGerenciarTimes();
         vs.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jMenu2ActionPerformed
+    }//GEN-LAST:event_gerenciarTimesMenuActionPerformed
 
-    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
+    private void gerenciarTimesMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gerenciarTimesMenuMouseClicked
         // IR PARA A TELA GERENCIAR TIMES
         telaGerenciarTimes vs = new telaGerenciarTimes();
         vs.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jMenu2MouseClicked
+    }//GEN-LAST:event_gerenciarTimesMenuMouseClicked
 
-    private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
+    private void gerenciarAdmsMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gerenciarAdmsMenuMouseClicked
         // IR PARA A TELA GERENCIAR ADMINISTRADORES
         telaGerenciarAdministradores vs = new telaGerenciarAdministradores();
         vs.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jMenu3MouseClicked
+    }//GEN-LAST:event_gerenciarAdmsMenuMouseClicked
 
     private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
 
@@ -2137,6 +2135,9 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton carregarTimesButton;
+    private javax.swing.JMenu gerenciarAdmsMenu;
+    private javax.swing.JMenu gerenciarTimesMenu;
+    private javax.swing.JMenu inicioMenu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel106;
@@ -2171,9 +2172,6 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel92;
     private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel98;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
